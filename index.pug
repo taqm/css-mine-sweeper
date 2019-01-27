@@ -1,0 +1,38 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css")
+    link(rel="stylesheet", href="./style.css")
+  body
+    form.mine_sweeper
+      h1 マインスイーパー
+      input#normal-mode(type="radio", name="mode", checked)
+      input#flag-mode(type="radio", name="mode")
+      p.mode_control
+        label.normal_mode(for="normal-mode")
+          span 通常　
+        label.flag_mode(for="flag-mode")
+          span フラグ
+
+      - for (let i = 0; i < 64; i++)
+        input(id = `input-${i}-open`, type = "checkbox")
+      - for (let i = 0; i < 64; i++)
+        input(id = `input-${i}-flag`, type = "checkbox")
+
+      .field
+        - for (let i = 0; i < 64; i++)
+          .cell
+            label.mark_as_opened(for = `input-${i}-open`)
+            label.mark_as_flag(for = `input-${i}-flag`)
+
+      label.game_over
+        label
+          input(type="reset")
+          span 失敗！クリックでもう一度
+
+      label.game_clear
+        label
+          input(type="reset")
+          span クリア！！！

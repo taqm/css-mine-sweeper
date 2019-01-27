@@ -1,0 +1,279 @@
+$cell-size: 35px;
+$row: 8;
+$col: 8;
+$mineCount: 1; // 地雷の数
+
+// base style
+
+html, body {
+  height: 100%;
+}
+
+input {
+  display: none;
+}
+
+.mine_sweeper {
+  height: 100%;
+  padding: 30px;
+  position: relative;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.mode_control {
+  text-align: center;
+
+  label {
+    margin: 3px;
+    cursor: pointer;
+    span {
+      font-size: 15px;
+      color: #BBB;
+    }
+  }
+
+  #normal-mode:checked ~ & {
+    .normal_mode {
+      span {
+        color: black;
+        font-size: 20px;
+      }
+    }
+  }
+  #flag-mode:checked ~ & {
+    .flag_mode {
+      span {
+        color: black;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+#normal-mode:checked ~ .field {
+  .mark_as_opened {
+    display: block;
+  }
+  .mark_as_flag {
+    display: none;
+  }
+}
+
+#flag-mode:checked ~ .field {
+  .mark_as_opened {
+    display: none;
+  }
+  .mark_as_flag {
+    display: block;
+  }
+}
+
+.field {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  width: #{($cell-size + 2) * $col};
+
+  .cell {
+    position: relative;
+    border: 1px solid #AAA;
+    width: $cell-size;
+    height: $cell-size;
+    background-color: #CCC;
+
+    label {
+      display: block;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+.game_over,
+.game_clear {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+
+// dynamic styling start!
+
+@mixin open {
+  background-color: #EEE;
+  &::before {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .mark_as_opened {
+    display: none;
+  }
+}
+
+$minePos: ();
+
+@for $i from 0 to $mineCount {
+  $mine: 0;
+  $continue: true;
+
+  @while $continue != null {
+    $mine: random($row * $col);
+    $continue: index($minePos, $mine);
+  }
+  $minePos: append($minePos, $mine);
+}
+
+$areaOffsets: (
+  (-$col, $col), // 上下
+  (-$col - 1, -1, $col - 1), // 左側
+  (-$col + 1, +1, $col + 1), // 右側
+);
+
+// フィールドの範囲内か判定
+@function isValidPos($pos) {
+  @return (
+    $pos >= 0 and
+    $pos < $row * $col
+  );
+}
+
+// 周辺８マスのポジションを取得
+@function getNeighborIndex($center) {
+  $wk: nth($areaOffsets, 1);
+  @if $center % $col != 0 { // 左端の場合スキップ
+    $wk: join($wk, nth($areaOffsets, 2));
+  }
+  @if $center % $col != $col - 1 { // 右恥の場合スキップ
+    $wk: join($wk, nth($areaOffsets, 3));
+  }
+  $ret: ();
+  @each $offset in $wk {
+    @if isValidPos($center + $offset) { // 範囲外は省く
+      $ret: append($ret, $center + $offset);
+    }
+  }
+  @return $ret;
+}
+
+// そこが地雷かどうか
+@function isMine($pos) {
+  @return index($minePos, $pos) != null;
+}
+
+// 周囲８マスの地雷の数を返却
+@function countMine($n) {
+  $count: 0;
+  @each $n in getNeighborIndex($n) {
+    @if isMine($n) {
+      $count: $count + 1;
+    }
+  }
+  @return $count;
+}
+
+@function getLinks($center, $linked) {
+  $neighber: getNeighborIndex($center);
+  $tmp: $linked;
+
+  @each $n in $neighber {
+    @if index($tmp, $n) == null {
+      $c: countMine($n);
+      $tmp: append($tmp, $n);
+      @if $c == 0 {
+        $tmp: getLinks($n, $tmp);
+      }
+    }
+  }
+  @return $tmp;
+}
+
+$mineSelector: ();
+@for $i from 0 to $col * $row {
+  $mines: countMine($i);
+  $isMine: isMine($i);
+  .cell:nth-child(#{$i + 1}) {
+    &::before {
+      @if $isMine {
+        $mineSelector: append($mineSelector, #{&}, 'comma');
+      } @else {
+        content: if($mines > 0, $mines + '', '');
+      }
+      display: none;
+    }
+
+    #input-#{$i}-flag:checked ~ .field & {
+      &::before {
+        content: "🚩";
+        padding-left: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+      }
+      .mark_as_opened {
+        display: none;
+      }
+    }
+    #input-#{$i}-open:checked ~ .field & {
+      @include open;
+    }
+  }
+
+  @if not($isMine) and $mines == 0 {
+    $selector: ();
+    @each $p in getLinks($i, ()) {
+      $selector: append($selector, "#input-#{$i}-open:checked ~ .field .cell:nth-child(#{$p + 1})");
+    }
+    #{join($selector, (), 'comma')} {
+      @include open;
+    }
+    $debug: $selector;
+  }
+}
+
+#{$mineSelector} {
+  content: '💣';
+}
+
+// ゲームオーバー判定
+$selector: ();
+@each $p in $minePos {
+  #input-#{$p}-open:checked ~ .game_over {
+    $selector: append($selector, #{&}, 'comma');
+  }
+}
+
+#{$selector} {
+  display: block;
+}
+
+$clearSelector: "input";
+@for $i from 0 to $col * $row {
+  $wk: "";
+  @if isMine($i) {
+    $wk: "#input-#{$i}-flag:checked";
+  } @else {
+    $wk: "#input-#{$i}-flag:not(:checked)";
+  }
+  $clearSelector: $clearSelector + ' ~ ' + $wk;
+}
+#{$clearSelector} ~ .game_clear {
+  display: block;
+}
