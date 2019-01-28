@@ -4,7 +4,6 @@ $col: 8;
 $mineCount: 1; // 地雷の数
 
 // base style
-
 html, body {
   height: 100%;
 }
@@ -249,7 +248,7 @@ $mineSelector: ();
 }
 
 #{$mineSelector} {
-  content: '💣';
+  content: '■';
 }
 
 // ゲームオーバー判定
@@ -274,6 +273,7 @@ $clearSelector: "input";
   }
   $clearSelector: $clearSelector + ' ~ ' + $wk;
 }
+
 #{$clearSelector} ~ .game_clear {
   display: block;
 }
