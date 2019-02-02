@@ -1,7 +1,9 @@
 $cell-size: 35px;
-$row: 8;
-$col: 8;
+$row: 8; // 横幅
+$col: 8; // 縦幅
 $mineCount: 1; // 地雷の数
+
+$minePos: (); // 各地雷の位置Index
 
 // base style
 html, body {
@@ -22,6 +24,7 @@ input {
   }
 }
 
+// 開く種別コントロール
 .mode_control {
   text-align: center;
 
@@ -34,20 +37,11 @@ input {
     }
   }
 
-  #normal-mode:checked ~ & {
-    .normal_mode {
-      span {
-        color: black;
-        font-size: 20px;
-      }
-    }
-  }
-  #flag-mode:checked ~ & {
-    .flag_mode {
-      span {
-        color: black;
-        font-size: 20px;
-      }
+  #normal-mode:checked ~ & .normal_mode,
+  #flag-mode:checked ~ & .flag_mode {
+    span {
+      color: black;
+      font-size: 20px;
     }
   }
 }
@@ -120,8 +114,6 @@ input {
     display: none;
   }
 }
-
-$minePos: ();
 
 @for $i from 0 to $mineCount {
   $mine: 0;

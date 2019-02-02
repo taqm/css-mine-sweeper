@@ -9,7 +9,7 @@
     "build": "run-p build:*",
     "prewatch": "run-s build",
     "watch": "run-p watch:*",
-    "serve": "hs dist"
+    "serve": "hs dist & yarn watch"
   },
   "dependencies": {
     "http-server": "^0.11.1",
