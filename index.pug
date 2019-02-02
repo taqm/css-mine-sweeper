@@ -7,7 +7,7 @@ html(lang="ja")
     link(rel="stylesheet", href="./style.css")
   body
     form.mine_sweeper
-      h1 マインスイーパー
+      h3 マインスイーパー
       input#normal-mode(type="radio", name="mode", checked)
       input#flag-mode(type="radio", name="mode")
       p.mode_control
@@ -19,7 +19,11 @@ html(lang="ja")
       - for (let i = 0; i < 64; i++)
         input(id = `input-${i}-open`, type = "checkbox")
       - for (let i = 0; i < 64; i++)
-        input(id = `input-${i}-flag`, type = "checkbox")
+        input.flag-check(id = `input-${i}-flag`, type = "checkbox")
+
+      p.notice-area
+        span 残り
+        span.last
 
       .field
         - for (let i = 0; i < 64; i++)
@@ -28,11 +32,9 @@ html(lang="ja")
             label.mark_as_flag(for = `input-${i}-flag`)
 
       label.game_over
-        label
-          input(type="reset")
-          span 失敗！クリックでもう一度
+        input(type="reset")
+        span 失敗！クリックでもう一度
 
       label.game_clear
-        label
-          input(type="reset")
-          span クリア！！！
+        input(type="reset")
+        span クリア！！！

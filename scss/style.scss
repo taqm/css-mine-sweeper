@@ -1,4 +1,4 @@
-$cell-size: 35px;
+$cell-size: 30px;
 $row: 8; // 横幅
 $col: 8; // 縦幅
 $mineCount: 10; // 地雷の数
@@ -6,22 +6,21 @@ $mineCount: 10; // 地雷の数
 $minePos: ();
 
 // base style
-html, body {
-  height: 100%;
-}
-
 input {
   display: none;
 }
 
 .mine_sweeper {
   height: 100%;
-  padding: 30px;
+  padding: 10px;
   position: relative;
 
-  h1 {
+  h3 {
     text-align: center;
   }
+}
+.notice-area {
+  text-align: center;
 }
 
 // 開く種別コントロール
@@ -32,7 +31,6 @@ input {
     margin: 3px;
     cursor: pointer;
     span {
-      font-size: 15px;
       color: #BBB;
     }
   }
@@ -41,7 +39,6 @@ input {
   #flag-mode:checked ~ & .flag_mode {
     span {
       color: black;
-      font-size: 20px;
     }
   }
 }
@@ -95,7 +92,7 @@ input {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.5);
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
   text-align: center;
 }
@@ -120,7 +117,7 @@ input {
   $continue: true;
 
   @while $continue != null {
-    $mine: random($row * $col);
+    $mine: random($row * ($col - 1));
     $continue: index($minePos, $mine);
   }
   $minePos: append($minePos, $mine);
@@ -244,15 +241,11 @@ $mineSelector: ();
 }
 
 // ゲームオーバー判定
-$selector: ();
+$overSelector: ();
 @each $p in $minePos {
   #input-#{$p}-open:checked ~ .game_over {
-    $selector: append($selector, #{&}, 'comma');
+    $overSelector: append($overSelector, #{&}, 'comma');
   }
-}
-
-#{$selector} {
-  display: block;
 }
 
 $clearSelector: "input";
@@ -266,6 +259,28 @@ $clearSelector: "input";
   $clearSelector: $clearSelector + ' ~ ' + $wk;
 }
 
+#{$overSelector},
 #{$clearSelector} ~ .game_clear {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+$lastSelector: "";
+@for $n from 1 through $mineCount {
+  $lastSelector: $lastSelector + ".flag-check:checked ~";
+
+  #{$lastSelector} .notice-area .last {
+    &::before {
+      content: "#{$mineCount - $n}";
+    }
+  }
+}
+.notice-area .last {
+  &::before {
+    content: "#{$mineCount}";
+  }
+  &::after {
+    content: '個';
+  }
 }
