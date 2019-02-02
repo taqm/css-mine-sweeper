@@ -196,7 +196,7 @@ $mineSelector: ();
       @if $isMine {
         $mineSelector: append($mineSelector, #{&}, 'comma');
       } @else {
-        content: if($mines > 0, $mines + '', '');
+        content: if($mines > 0, "#{$mines}", '');
       }
       display: none;
     }
