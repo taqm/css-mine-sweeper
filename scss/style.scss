@@ -1,9 +1,9 @@
 $cell-size: 35px;
 $row: 8; // 横幅
 $col: 8; // 縦幅
-$mineCount: 1; // 地雷の数
+$mineCount: 5; // 地雷の数
 
-$minePos: (); // 各地雷の位置Index
+$minePos: ();
 
 // base style
 html, body {
