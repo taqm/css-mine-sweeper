@@ -117,7 +117,7 @@ input {
   $continue: true;
 
   @while $continue != null {
-    $mine: random($row * ($col - 1));
+    $mine: random(($row * $col) - 1);
     $continue: index($minePos, $mine);
   }
   $minePos: append($minePos, $mine);
