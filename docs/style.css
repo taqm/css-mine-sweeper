@@ -13,7 +13,7 @@ input {
   text-align: center;
 }
 
-.notice-area {
+.notice_area {
   text-align: center;
 }
 
@@ -121,27 +121,46 @@ input {
   align-items: center;
 }
 
-#input-0-open:checked ~ .field .cell:nth-child(1) .mark_as_opened {
+#input-0-open:checked ~ .field .cell:nth-child(1) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(1) .mark_as_flag {
   display: none;
 }
 
-#input-0-open:checked ~ .field .cell:nth-child(9), #input-0-open:checked ~ .field .cell:nth-child(2), #input-0-open:checked ~ .field .cell:nth-child(10) {
+#input-0-open:checked ~ .field .cell:nth-child(9), #input-0-open:checked ~ .field .cell:nth-child(1), #input-0-open:checked ~ .field .cell:nth-child(2), #input-0-open:checked ~ .field .cell:nth-child(10), #input-0-open:checked ~ .field .cell:nth-child(18), #input-0-open:checked ~ .field .cell:nth-child(26), #input-0-open:checked ~ .field .cell:nth-child(17), #input-0-open:checked ~ .field .cell:nth-child(25), #input-0-open:checked ~ .field .cell:nth-child(33), #input-0-open:checked ~ .field .cell:nth-child(41), #input-0-open:checked ~ .field .cell:nth-child(49), #input-0-open:checked ~ .field .cell:nth-child(34), #input-0-open:checked ~ .field .cell:nth-child(42), #input-0-open:checked ~ .field .cell:nth-child(50), #input-0-open:checked ~ .field .cell:nth-child(11), #input-0-open:checked ~ .field .cell:nth-child(19), #input-0-open:checked ~ .field .cell:nth-child(27), #input-0-open:checked ~ .field .cell:nth-child(3) {
   background-color: #EEE;
 }
 
-#input-0-open:checked ~ .field .cell:nth-child(9)::before, #input-0-open:checked ~ .field .cell:nth-child(2)::before, #input-0-open:checked ~ .field .cell:nth-child(10)::before {
+#input-0-open:checked ~ .field .cell:nth-child(9)::before, #input-0-open:checked ~ .field .cell:nth-child(1)::before, #input-0-open:checked ~ .field .cell:nth-child(2)::before, #input-0-open:checked ~ .field .cell:nth-child(10)::before, #input-0-open:checked ~ .field .cell:nth-child(18)::before, #input-0-open:checked ~ .field .cell:nth-child(26)::before, #input-0-open:checked ~ .field .cell:nth-child(17)::before, #input-0-open:checked ~ .field .cell:nth-child(25)::before, #input-0-open:checked ~ .field .cell:nth-child(33)::before, #input-0-open:checked ~ .field .cell:nth-child(41)::before, #input-0-open:checked ~ .field .cell:nth-child(49)::before, #input-0-open:checked ~ .field .cell:nth-child(34)::before, #input-0-open:checked ~ .field .cell:nth-child(42)::before, #input-0-open:checked ~ .field .cell:nth-child(50)::before, #input-0-open:checked ~ .field .cell:nth-child(11)::before, #input-0-open:checked ~ .field .cell:nth-child(19)::before, #input-0-open:checked ~ .field .cell:nth-child(27)::before, #input-0-open:checked ~ .field .cell:nth-child(3)::before {
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
 }
 
-#input-0-open:checked ~ .field .cell:nth-child(9) .mark_as_opened, #input-0-open:checked ~ .field .cell:nth-child(2) .mark_as_opened, #input-0-open:checked ~ .field .cell:nth-child(10) .mark_as_opened {
+#input-0-open:checked ~ .field .cell:nth-child(9) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(9) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(1) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(1) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(2) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(2) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(10) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(10) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(18) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(18) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(26) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(26) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(17) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(17) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(25) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(25) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(33) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(33) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(41) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(41) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(49) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(49) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(34) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(34) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(42) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(42) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(50) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(50) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(11) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(11) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(19) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(19) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(27) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(27) .mark_as_flag, #input-0-open:checked ~ .field .cell:nth-child(3) .mark_as_opened,
+#input-0-open:checked ~ .field .cell:nth-child(3) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(2)::before {
-  content: "1";
+  content: "";
   display: none;
 }
 
@@ -174,7 +193,41 @@ input {
   align-items: center;
 }
 
-#input-1-open:checked ~ .field .cell:nth-child(2) .mark_as_opened {
+#input-1-open:checked ~ .field .cell:nth-child(2) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(2) .mark_as_flag {
+  display: none;
+}
+
+#input-1-open:checked ~ .field .cell:nth-child(10), #input-1-open:checked ~ .field .cell:nth-child(2), #input-1-open:checked ~ .field .cell:nth-child(1), #input-1-open:checked ~ .field .cell:nth-child(9), #input-1-open:checked ~ .field .cell:nth-child(17), #input-1-open:checked ~ .field .cell:nth-child(25), #input-1-open:checked ~ .field .cell:nth-child(33), #input-1-open:checked ~ .field .cell:nth-child(41), #input-1-open:checked ~ .field .cell:nth-child(49), #input-1-open:checked ~ .field .cell:nth-child(34), #input-1-open:checked ~ .field .cell:nth-child(42), #input-1-open:checked ~ .field .cell:nth-child(50), #input-1-open:checked ~ .field .cell:nth-child(26), #input-1-open:checked ~ .field .cell:nth-child(18), #input-1-open:checked ~ .field .cell:nth-child(11), #input-1-open:checked ~ .field .cell:nth-child(19), #input-1-open:checked ~ .field .cell:nth-child(27), #input-1-open:checked ~ .field .cell:nth-child(3) {
+  background-color: #EEE;
+}
+
+#input-1-open:checked ~ .field .cell:nth-child(10)::before, #input-1-open:checked ~ .field .cell:nth-child(2)::before, #input-1-open:checked ~ .field .cell:nth-child(1)::before, #input-1-open:checked ~ .field .cell:nth-child(9)::before, #input-1-open:checked ~ .field .cell:nth-child(17)::before, #input-1-open:checked ~ .field .cell:nth-child(25)::before, #input-1-open:checked ~ .field .cell:nth-child(33)::before, #input-1-open:checked ~ .field .cell:nth-child(41)::before, #input-1-open:checked ~ .field .cell:nth-child(49)::before, #input-1-open:checked ~ .field .cell:nth-child(34)::before, #input-1-open:checked ~ .field .cell:nth-child(42)::before, #input-1-open:checked ~ .field .cell:nth-child(50)::before, #input-1-open:checked ~ .field .cell:nth-child(26)::before, #input-1-open:checked ~ .field .cell:nth-child(18)::before, #input-1-open:checked ~ .field .cell:nth-child(11)::before, #input-1-open:checked ~ .field .cell:nth-child(19)::before, #input-1-open:checked ~ .field .cell:nth-child(27)::before, #input-1-open:checked ~ .field .cell:nth-child(3)::before {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-1-open:checked ~ .field .cell:nth-child(10) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(10) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(2) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(2) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(1) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(1) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(9) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(9) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(17) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(17) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(25) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(25) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(33) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(33) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(41) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(41) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(49) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(49) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(34) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(34) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(42) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(42) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(50) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(50) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(26) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(26) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(18) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(18) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(11) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(11) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(19) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(19) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(27) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(27) .mark_as_flag, #input-1-open:checked ~ .field .cell:nth-child(3) .mark_as_opened,
+#input-1-open:checked ~ .field .cell:nth-child(3) .mark_as_flag {
   display: none;
 }
 
@@ -212,7 +265,8 @@ input {
   align-items: center;
 }
 
-#input-2-open:checked ~ .field .cell:nth-child(3) .mark_as_opened {
+#input-2-open:checked ~ .field .cell:nth-child(3) .mark_as_opened,
+#input-2-open:checked ~ .field .cell:nth-child(3) .mark_as_flag {
   display: none;
 }
 
@@ -250,12 +304,13 @@ input {
   align-items: center;
 }
 
-#input-3-open:checked ~ .field .cell:nth-child(4) .mark_as_opened {
+#input-3-open:checked ~ .field .cell:nth-child(4) .mark_as_opened,
+#input-3-open:checked ~ .field .cell:nth-child(4) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(5)::before {
-  content: "";
+  content: "1";
   display: none;
 }
 
@@ -288,22 +343,8 @@ input {
   align-items: center;
 }
 
-#input-4-open:checked ~ .field .cell:nth-child(5) .mark_as_opened {
-  display: none;
-}
-
-#input-4-open:checked ~ .field .cell:nth-child(13), #input-4-open:checked ~ .field .cell:nth-child(4), #input-4-open:checked ~ .field .cell:nth-child(12), #input-4-open:checked ~ .field .cell:nth-child(6), #input-4-open:checked ~ .field .cell:nth-child(14), #input-4-open:checked ~ .field .cell:nth-child(5), #input-4-open:checked ~ .field .cell:nth-child(7), #input-4-open:checked ~ .field .cell:nth-child(15), #input-4-open:checked ~ .field .cell:nth-child(23), #input-4-open:checked ~ .field .cell:nth-child(31), #input-4-open:checked ~ .field .cell:nth-child(39), #input-4-open:checked ~ .field .cell:nth-child(22), #input-4-open:checked ~ .field .cell:nth-child(30), #input-4-open:checked ~ .field .cell:nth-child(38), #input-4-open:checked ~ .field .cell:nth-child(24), #input-4-open:checked ~ .field .cell:nth-child(16), #input-4-open:checked ~ .field .cell:nth-child(8), #input-4-open:checked ~ .field .cell:nth-child(32), #input-4-open:checked ~ .field .cell:nth-child(40) {
-  background-color: #EEE;
-}
-
-#input-4-open:checked ~ .field .cell:nth-child(13)::before, #input-4-open:checked ~ .field .cell:nth-child(4)::before, #input-4-open:checked ~ .field .cell:nth-child(12)::before, #input-4-open:checked ~ .field .cell:nth-child(6)::before, #input-4-open:checked ~ .field .cell:nth-child(14)::before, #input-4-open:checked ~ .field .cell:nth-child(5)::before, #input-4-open:checked ~ .field .cell:nth-child(7)::before, #input-4-open:checked ~ .field .cell:nth-child(15)::before, #input-4-open:checked ~ .field .cell:nth-child(23)::before, #input-4-open:checked ~ .field .cell:nth-child(31)::before, #input-4-open:checked ~ .field .cell:nth-child(39)::before, #input-4-open:checked ~ .field .cell:nth-child(22)::before, #input-4-open:checked ~ .field .cell:nth-child(30)::before, #input-4-open:checked ~ .field .cell:nth-child(38)::before, #input-4-open:checked ~ .field .cell:nth-child(24)::before, #input-4-open:checked ~ .field .cell:nth-child(16)::before, #input-4-open:checked ~ .field .cell:nth-child(8)::before, #input-4-open:checked ~ .field .cell:nth-child(32)::before, #input-4-open:checked ~ .field .cell:nth-child(40)::before {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-#input-4-open:checked ~ .field .cell:nth-child(13) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(4) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(12) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(6) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(14) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(5) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(7) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(15) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(23) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(31) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(39) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(22) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(30) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(38) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(24) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(16) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(8) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(32) .mark_as_opened, #input-4-open:checked ~ .field .cell:nth-child(40) .mark_as_opened {
+#input-4-open:checked ~ .field .cell:nth-child(5) .mark_as_opened,
+#input-4-open:checked ~ .field .cell:nth-child(5) .mark_as_flag {
   display: none;
 }
 
@@ -341,22 +382,42 @@ input {
   align-items: center;
 }
 
-#input-5-open:checked ~ .field .cell:nth-child(6) .mark_as_opened {
+#input-5-open:checked ~ .field .cell:nth-child(6) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(6) .mark_as_flag {
   display: none;
 }
 
-#input-5-open:checked ~ .field .cell:nth-child(14), #input-5-open:checked ~ .field .cell:nth-child(5), #input-5-open:checked ~ .field .cell:nth-child(13), #input-5-open:checked ~ .field .cell:nth-child(4), #input-5-open:checked ~ .field .cell:nth-child(12), #input-5-open:checked ~ .field .cell:nth-child(6), #input-5-open:checked ~ .field .cell:nth-child(7), #input-5-open:checked ~ .field .cell:nth-child(15), #input-5-open:checked ~ .field .cell:nth-child(23), #input-5-open:checked ~ .field .cell:nth-child(31), #input-5-open:checked ~ .field .cell:nth-child(39), #input-5-open:checked ~ .field .cell:nth-child(22), #input-5-open:checked ~ .field .cell:nth-child(30), #input-5-open:checked ~ .field .cell:nth-child(38), #input-5-open:checked ~ .field .cell:nth-child(24), #input-5-open:checked ~ .field .cell:nth-child(16), #input-5-open:checked ~ .field .cell:nth-child(8), #input-5-open:checked ~ .field .cell:nth-child(32), #input-5-open:checked ~ .field .cell:nth-child(40) {
+#input-5-open:checked ~ .field .cell:nth-child(14), #input-5-open:checked ~ .field .cell:nth-child(5), #input-5-open:checked ~ .field .cell:nth-child(13), #input-5-open:checked ~ .field .cell:nth-child(7), #input-5-open:checked ~ .field .cell:nth-child(15), #input-5-open:checked ~ .field .cell:nth-child(6), #input-5-open:checked ~ .field .cell:nth-child(8), #input-5-open:checked ~ .field .cell:nth-child(16), #input-5-open:checked ~ .field .cell:nth-child(24), #input-5-open:checked ~ .field .cell:nth-child(32), #input-5-open:checked ~ .field .cell:nth-child(40), #input-5-open:checked ~ .field .cell:nth-child(48), #input-5-open:checked ~ .field .cell:nth-child(31), #input-5-open:checked ~ .field .cell:nth-child(39), #input-5-open:checked ~ .field .cell:nth-child(47), #input-5-open:checked ~ .field .cell:nth-child(30), #input-5-open:checked ~ .field .cell:nth-child(38), #input-5-open:checked ~ .field .cell:nth-child(46), #input-5-open:checked ~ .field .cell:nth-child(23) {
   background-color: #EEE;
 }
 
-#input-5-open:checked ~ .field .cell:nth-child(14)::before, #input-5-open:checked ~ .field .cell:nth-child(5)::before, #input-5-open:checked ~ .field .cell:nth-child(13)::before, #input-5-open:checked ~ .field .cell:nth-child(4)::before, #input-5-open:checked ~ .field .cell:nth-child(12)::before, #input-5-open:checked ~ .field .cell:nth-child(6)::before, #input-5-open:checked ~ .field .cell:nth-child(7)::before, #input-5-open:checked ~ .field .cell:nth-child(15)::before, #input-5-open:checked ~ .field .cell:nth-child(23)::before, #input-5-open:checked ~ .field .cell:nth-child(31)::before, #input-5-open:checked ~ .field .cell:nth-child(39)::before, #input-5-open:checked ~ .field .cell:nth-child(22)::before, #input-5-open:checked ~ .field .cell:nth-child(30)::before, #input-5-open:checked ~ .field .cell:nth-child(38)::before, #input-5-open:checked ~ .field .cell:nth-child(24)::before, #input-5-open:checked ~ .field .cell:nth-child(16)::before, #input-5-open:checked ~ .field .cell:nth-child(8)::before, #input-5-open:checked ~ .field .cell:nth-child(32)::before, #input-5-open:checked ~ .field .cell:nth-child(40)::before {
+#input-5-open:checked ~ .field .cell:nth-child(14)::before, #input-5-open:checked ~ .field .cell:nth-child(5)::before, #input-5-open:checked ~ .field .cell:nth-child(13)::before, #input-5-open:checked ~ .field .cell:nth-child(7)::before, #input-5-open:checked ~ .field .cell:nth-child(15)::before, #input-5-open:checked ~ .field .cell:nth-child(6)::before, #input-5-open:checked ~ .field .cell:nth-child(8)::before, #input-5-open:checked ~ .field .cell:nth-child(16)::before, #input-5-open:checked ~ .field .cell:nth-child(24)::before, #input-5-open:checked ~ .field .cell:nth-child(32)::before, #input-5-open:checked ~ .field .cell:nth-child(40)::before, #input-5-open:checked ~ .field .cell:nth-child(48)::before, #input-5-open:checked ~ .field .cell:nth-child(31)::before, #input-5-open:checked ~ .field .cell:nth-child(39)::before, #input-5-open:checked ~ .field .cell:nth-child(47)::before, #input-5-open:checked ~ .field .cell:nth-child(30)::before, #input-5-open:checked ~ .field .cell:nth-child(38)::before, #input-5-open:checked ~ .field .cell:nth-child(46)::before, #input-5-open:checked ~ .field .cell:nth-child(23)::before {
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
 }
 
-#input-5-open:checked ~ .field .cell:nth-child(14) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(5) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(13) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(4) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(12) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(6) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(7) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(15) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(23) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(31) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(39) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(22) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(30) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(38) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(24) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(16) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(8) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(32) .mark_as_opened, #input-5-open:checked ~ .field .cell:nth-child(40) .mark_as_opened {
+#input-5-open:checked ~ .field .cell:nth-child(14) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(14) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(5) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(5) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(13) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(13) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(7) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(7) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(15) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(15) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(6) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(6) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(8) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(8) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(16) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(16) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(24) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(24) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(32) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(32) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(40) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(40) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(48) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(48) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(31) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(31) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(39) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(39) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(47) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(47) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(30) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(30) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(38) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(38) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(46) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(46) .mark_as_flag, #input-5-open:checked ~ .field .cell:nth-child(23) .mark_as_opened,
+#input-5-open:checked ~ .field .cell:nth-child(23) .mark_as_flag {
   display: none;
 }
 
@@ -394,22 +455,42 @@ input {
   align-items: center;
 }
 
-#input-6-open:checked ~ .field .cell:nth-child(7) .mark_as_opened {
+#input-6-open:checked ~ .field .cell:nth-child(7) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(7) .mark_as_flag {
   display: none;
 }
 
-#input-6-open:checked ~ .field .cell:nth-child(15), #input-6-open:checked ~ .field .cell:nth-child(7), #input-6-open:checked ~ .field .cell:nth-child(6), #input-6-open:checked ~ .field .cell:nth-child(14), #input-6-open:checked ~ .field .cell:nth-child(5), #input-6-open:checked ~ .field .cell:nth-child(13), #input-6-open:checked ~ .field .cell:nth-child(4), #input-6-open:checked ~ .field .cell:nth-child(12), #input-6-open:checked ~ .field .cell:nth-child(8), #input-6-open:checked ~ .field .cell:nth-child(16), #input-6-open:checked ~ .field .cell:nth-child(24), #input-6-open:checked ~ .field .cell:nth-child(32), #input-6-open:checked ~ .field .cell:nth-child(40), #input-6-open:checked ~ .field .cell:nth-child(23), #input-6-open:checked ~ .field .cell:nth-child(31), #input-6-open:checked ~ .field .cell:nth-child(39), #input-6-open:checked ~ .field .cell:nth-child(22), #input-6-open:checked ~ .field .cell:nth-child(30), #input-6-open:checked ~ .field .cell:nth-child(38) {
+#input-6-open:checked ~ .field .cell:nth-child(15), #input-6-open:checked ~ .field .cell:nth-child(6), #input-6-open:checked ~ .field .cell:nth-child(14), #input-6-open:checked ~ .field .cell:nth-child(5), #input-6-open:checked ~ .field .cell:nth-child(13), #input-6-open:checked ~ .field .cell:nth-child(7), #input-6-open:checked ~ .field .cell:nth-child(8), #input-6-open:checked ~ .field .cell:nth-child(16), #input-6-open:checked ~ .field .cell:nth-child(24), #input-6-open:checked ~ .field .cell:nth-child(32), #input-6-open:checked ~ .field .cell:nth-child(40), #input-6-open:checked ~ .field .cell:nth-child(48), #input-6-open:checked ~ .field .cell:nth-child(31), #input-6-open:checked ~ .field .cell:nth-child(39), #input-6-open:checked ~ .field .cell:nth-child(47), #input-6-open:checked ~ .field .cell:nth-child(30), #input-6-open:checked ~ .field .cell:nth-child(38), #input-6-open:checked ~ .field .cell:nth-child(46), #input-6-open:checked ~ .field .cell:nth-child(23) {
   background-color: #EEE;
 }
 
-#input-6-open:checked ~ .field .cell:nth-child(15)::before, #input-6-open:checked ~ .field .cell:nth-child(7)::before, #input-6-open:checked ~ .field .cell:nth-child(6)::before, #input-6-open:checked ~ .field .cell:nth-child(14)::before, #input-6-open:checked ~ .field .cell:nth-child(5)::before, #input-6-open:checked ~ .field .cell:nth-child(13)::before, #input-6-open:checked ~ .field .cell:nth-child(4)::before, #input-6-open:checked ~ .field .cell:nth-child(12)::before, #input-6-open:checked ~ .field .cell:nth-child(8)::before, #input-6-open:checked ~ .field .cell:nth-child(16)::before, #input-6-open:checked ~ .field .cell:nth-child(24)::before, #input-6-open:checked ~ .field .cell:nth-child(32)::before, #input-6-open:checked ~ .field .cell:nth-child(40)::before, #input-6-open:checked ~ .field .cell:nth-child(23)::before, #input-6-open:checked ~ .field .cell:nth-child(31)::before, #input-6-open:checked ~ .field .cell:nth-child(39)::before, #input-6-open:checked ~ .field .cell:nth-child(22)::before, #input-6-open:checked ~ .field .cell:nth-child(30)::before, #input-6-open:checked ~ .field .cell:nth-child(38)::before {
+#input-6-open:checked ~ .field .cell:nth-child(15)::before, #input-6-open:checked ~ .field .cell:nth-child(6)::before, #input-6-open:checked ~ .field .cell:nth-child(14)::before, #input-6-open:checked ~ .field .cell:nth-child(5)::before, #input-6-open:checked ~ .field .cell:nth-child(13)::before, #input-6-open:checked ~ .field .cell:nth-child(7)::before, #input-6-open:checked ~ .field .cell:nth-child(8)::before, #input-6-open:checked ~ .field .cell:nth-child(16)::before, #input-6-open:checked ~ .field .cell:nth-child(24)::before, #input-6-open:checked ~ .field .cell:nth-child(32)::before, #input-6-open:checked ~ .field .cell:nth-child(40)::before, #input-6-open:checked ~ .field .cell:nth-child(48)::before, #input-6-open:checked ~ .field .cell:nth-child(31)::before, #input-6-open:checked ~ .field .cell:nth-child(39)::before, #input-6-open:checked ~ .field .cell:nth-child(47)::before, #input-6-open:checked ~ .field .cell:nth-child(30)::before, #input-6-open:checked ~ .field .cell:nth-child(38)::before, #input-6-open:checked ~ .field .cell:nth-child(46)::before, #input-6-open:checked ~ .field .cell:nth-child(23)::before {
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
 }
 
-#input-6-open:checked ~ .field .cell:nth-child(15) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(7) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(6) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(14) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(5) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(13) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(4) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(12) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(8) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(16) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(24) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(32) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(40) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(23) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(31) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(39) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(22) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(30) .mark_as_opened, #input-6-open:checked ~ .field .cell:nth-child(38) .mark_as_opened {
+#input-6-open:checked ~ .field .cell:nth-child(15) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(15) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(6) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(6) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(14) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(14) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(5) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(5) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(13) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(13) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(7) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(7) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(8) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(8) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(16) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(16) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(24) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(24) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(32) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(32) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(40) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(40) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(48) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(48) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(31) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(31) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(39) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(39) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(47) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(47) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(30) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(30) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(38) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(38) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(46) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(46) .mark_as_flag, #input-6-open:checked ~ .field .cell:nth-child(23) .mark_as_opened,
+#input-6-open:checked ~ .field .cell:nth-child(23) .mark_as_flag {
   display: none;
 }
 
@@ -447,27 +528,47 @@ input {
   align-items: center;
 }
 
-#input-7-open:checked ~ .field .cell:nth-child(8) .mark_as_opened {
+#input-7-open:checked ~ .field .cell:nth-child(8) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(8) .mark_as_flag {
   display: none;
 }
 
-#input-7-open:checked ~ .field .cell:nth-child(16), #input-7-open:checked ~ .field .cell:nth-child(8), #input-7-open:checked ~ .field .cell:nth-child(7), #input-7-open:checked ~ .field .cell:nth-child(15), #input-7-open:checked ~ .field .cell:nth-child(23), #input-7-open:checked ~ .field .cell:nth-child(31), #input-7-open:checked ~ .field .cell:nth-child(39), #input-7-open:checked ~ .field .cell:nth-child(22), #input-7-open:checked ~ .field .cell:nth-child(30), #input-7-open:checked ~ .field .cell:nth-child(38), #input-7-open:checked ~ .field .cell:nth-child(24), #input-7-open:checked ~ .field .cell:nth-child(32), #input-7-open:checked ~ .field .cell:nth-child(40), #input-7-open:checked ~ .field .cell:nth-child(14), #input-7-open:checked ~ .field .cell:nth-child(6), #input-7-open:checked ~ .field .cell:nth-child(5), #input-7-open:checked ~ .field .cell:nth-child(13), #input-7-open:checked ~ .field .cell:nth-child(4), #input-7-open:checked ~ .field .cell:nth-child(12) {
+#input-7-open:checked ~ .field .cell:nth-child(16), #input-7-open:checked ~ .field .cell:nth-child(8), #input-7-open:checked ~ .field .cell:nth-child(7), #input-7-open:checked ~ .field .cell:nth-child(15), #input-7-open:checked ~ .field .cell:nth-child(6), #input-7-open:checked ~ .field .cell:nth-child(14), #input-7-open:checked ~ .field .cell:nth-child(5), #input-7-open:checked ~ .field .cell:nth-child(13), #input-7-open:checked ~ .field .cell:nth-child(24), #input-7-open:checked ~ .field .cell:nth-child(32), #input-7-open:checked ~ .field .cell:nth-child(40), #input-7-open:checked ~ .field .cell:nth-child(48), #input-7-open:checked ~ .field .cell:nth-child(31), #input-7-open:checked ~ .field .cell:nth-child(39), #input-7-open:checked ~ .field .cell:nth-child(47), #input-7-open:checked ~ .field .cell:nth-child(30), #input-7-open:checked ~ .field .cell:nth-child(38), #input-7-open:checked ~ .field .cell:nth-child(46), #input-7-open:checked ~ .field .cell:nth-child(23) {
   background-color: #EEE;
 }
 
-#input-7-open:checked ~ .field .cell:nth-child(16)::before, #input-7-open:checked ~ .field .cell:nth-child(8)::before, #input-7-open:checked ~ .field .cell:nth-child(7)::before, #input-7-open:checked ~ .field .cell:nth-child(15)::before, #input-7-open:checked ~ .field .cell:nth-child(23)::before, #input-7-open:checked ~ .field .cell:nth-child(31)::before, #input-7-open:checked ~ .field .cell:nth-child(39)::before, #input-7-open:checked ~ .field .cell:nth-child(22)::before, #input-7-open:checked ~ .field .cell:nth-child(30)::before, #input-7-open:checked ~ .field .cell:nth-child(38)::before, #input-7-open:checked ~ .field .cell:nth-child(24)::before, #input-7-open:checked ~ .field .cell:nth-child(32)::before, #input-7-open:checked ~ .field .cell:nth-child(40)::before, #input-7-open:checked ~ .field .cell:nth-child(14)::before, #input-7-open:checked ~ .field .cell:nth-child(6)::before, #input-7-open:checked ~ .field .cell:nth-child(5)::before, #input-7-open:checked ~ .field .cell:nth-child(13)::before, #input-7-open:checked ~ .field .cell:nth-child(4)::before, #input-7-open:checked ~ .field .cell:nth-child(12)::before {
+#input-7-open:checked ~ .field .cell:nth-child(16)::before, #input-7-open:checked ~ .field .cell:nth-child(8)::before, #input-7-open:checked ~ .field .cell:nth-child(7)::before, #input-7-open:checked ~ .field .cell:nth-child(15)::before, #input-7-open:checked ~ .field .cell:nth-child(6)::before, #input-7-open:checked ~ .field .cell:nth-child(14)::before, #input-7-open:checked ~ .field .cell:nth-child(5)::before, #input-7-open:checked ~ .field .cell:nth-child(13)::before, #input-7-open:checked ~ .field .cell:nth-child(24)::before, #input-7-open:checked ~ .field .cell:nth-child(32)::before, #input-7-open:checked ~ .field .cell:nth-child(40)::before, #input-7-open:checked ~ .field .cell:nth-child(48)::before, #input-7-open:checked ~ .field .cell:nth-child(31)::before, #input-7-open:checked ~ .field .cell:nth-child(39)::before, #input-7-open:checked ~ .field .cell:nth-child(47)::before, #input-7-open:checked ~ .field .cell:nth-child(30)::before, #input-7-open:checked ~ .field .cell:nth-child(38)::before, #input-7-open:checked ~ .field .cell:nth-child(46)::before, #input-7-open:checked ~ .field .cell:nth-child(23)::before {
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
 }
 
-#input-7-open:checked ~ .field .cell:nth-child(16) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(8) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(7) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(15) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(23) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(31) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(39) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(22) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(30) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(38) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(24) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(32) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(40) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(14) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(6) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(5) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(13) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(4) .mark_as_opened, #input-7-open:checked ~ .field .cell:nth-child(12) .mark_as_opened {
+#input-7-open:checked ~ .field .cell:nth-child(16) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(16) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(8) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(8) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(7) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(7) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(15) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(15) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(6) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(6) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(14) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(14) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(5) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(5) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(13) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(13) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(24) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(24) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(32) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(32) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(40) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(40) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(48) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(48) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(31) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(31) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(39) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(39) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(47) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(47) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(30) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(30) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(38) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(38) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(46) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(46) .mark_as_flag, #input-7-open:checked ~ .field .cell:nth-child(23) .mark_as_opened,
+#input-7-open:checked ~ .field .cell:nth-child(23) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(9)::before {
-  content: "1";
+  content: "";
   display: none;
 }
 
@@ -500,12 +601,46 @@ input {
   align-items: center;
 }
 
-#input-8-open:checked ~ .field .cell:nth-child(9) .mark_as_opened {
+#input-8-open:checked ~ .field .cell:nth-child(9) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(9) .mark_as_flag {
+  display: none;
+}
+
+#input-8-open:checked ~ .field .cell:nth-child(1), #input-8-open:checked ~ .field .cell:nth-child(9), #input-8-open:checked ~ .field .cell:nth-child(17), #input-8-open:checked ~ .field .cell:nth-child(25), #input-8-open:checked ~ .field .cell:nth-child(33), #input-8-open:checked ~ .field .cell:nth-child(41), #input-8-open:checked ~ .field .cell:nth-child(49), #input-8-open:checked ~ .field .cell:nth-child(34), #input-8-open:checked ~ .field .cell:nth-child(42), #input-8-open:checked ~ .field .cell:nth-child(50), #input-8-open:checked ~ .field .cell:nth-child(26), #input-8-open:checked ~ .field .cell:nth-child(18), #input-8-open:checked ~ .field .cell:nth-child(10), #input-8-open:checked ~ .field .cell:nth-child(2), #input-8-open:checked ~ .field .cell:nth-child(3), #input-8-open:checked ~ .field .cell:nth-child(11), #input-8-open:checked ~ .field .cell:nth-child(19), #input-8-open:checked ~ .field .cell:nth-child(27) {
+  background-color: #EEE;
+}
+
+#input-8-open:checked ~ .field .cell:nth-child(1)::before, #input-8-open:checked ~ .field .cell:nth-child(9)::before, #input-8-open:checked ~ .field .cell:nth-child(17)::before, #input-8-open:checked ~ .field .cell:nth-child(25)::before, #input-8-open:checked ~ .field .cell:nth-child(33)::before, #input-8-open:checked ~ .field .cell:nth-child(41)::before, #input-8-open:checked ~ .field .cell:nth-child(49)::before, #input-8-open:checked ~ .field .cell:nth-child(34)::before, #input-8-open:checked ~ .field .cell:nth-child(42)::before, #input-8-open:checked ~ .field .cell:nth-child(50)::before, #input-8-open:checked ~ .field .cell:nth-child(26)::before, #input-8-open:checked ~ .field .cell:nth-child(18)::before, #input-8-open:checked ~ .field .cell:nth-child(10)::before, #input-8-open:checked ~ .field .cell:nth-child(2)::before, #input-8-open:checked ~ .field .cell:nth-child(3)::before, #input-8-open:checked ~ .field .cell:nth-child(11)::before, #input-8-open:checked ~ .field .cell:nth-child(19)::before, #input-8-open:checked ~ .field .cell:nth-child(27)::before {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-8-open:checked ~ .field .cell:nth-child(1) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(1) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(9) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(9) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(17) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(17) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(25) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(25) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(33) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(33) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(41) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(41) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(49) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(49) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(34) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(34) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(42) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(42) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(50) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(50) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(26) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(26) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(18) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(18) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(10) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(10) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(2) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(2) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(3) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(3) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(11) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(11) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(19) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(19) .mark_as_flag, #input-8-open:checked ~ .field .cell:nth-child(27) .mark_as_opened,
+#input-8-open:checked ~ .field .cell:nth-child(27) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(10)::before {
-  content: "2";
+  content: "";
   display: none;
 }
 
@@ -538,11 +673,46 @@ input {
   align-items: center;
 }
 
-#input-9-open:checked ~ .field .cell:nth-child(10) .mark_as_opened {
+#input-9-open:checked ~ .field .cell:nth-child(10) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(10) .mark_as_flag {
+  display: none;
+}
+
+#input-9-open:checked ~ .field .cell:nth-child(2), #input-9-open:checked ~ .field .cell:nth-child(10), #input-9-open:checked ~ .field .cell:nth-child(18), #input-9-open:checked ~ .field .cell:nth-child(26), #input-9-open:checked ~ .field .cell:nth-child(9), #input-9-open:checked ~ .field .cell:nth-child(1), #input-9-open:checked ~ .field .cell:nth-child(17), #input-9-open:checked ~ .field .cell:nth-child(25), #input-9-open:checked ~ .field .cell:nth-child(33), #input-9-open:checked ~ .field .cell:nth-child(41), #input-9-open:checked ~ .field .cell:nth-child(49), #input-9-open:checked ~ .field .cell:nth-child(34), #input-9-open:checked ~ .field .cell:nth-child(42), #input-9-open:checked ~ .field .cell:nth-child(50), #input-9-open:checked ~ .field .cell:nth-child(11), #input-9-open:checked ~ .field .cell:nth-child(19), #input-9-open:checked ~ .field .cell:nth-child(27), #input-9-open:checked ~ .field .cell:nth-child(3) {
+  background-color: #EEE;
+}
+
+#input-9-open:checked ~ .field .cell:nth-child(2)::before, #input-9-open:checked ~ .field .cell:nth-child(10)::before, #input-9-open:checked ~ .field .cell:nth-child(18)::before, #input-9-open:checked ~ .field .cell:nth-child(26)::before, #input-9-open:checked ~ .field .cell:nth-child(9)::before, #input-9-open:checked ~ .field .cell:nth-child(1)::before, #input-9-open:checked ~ .field .cell:nth-child(17)::before, #input-9-open:checked ~ .field .cell:nth-child(25)::before, #input-9-open:checked ~ .field .cell:nth-child(33)::before, #input-9-open:checked ~ .field .cell:nth-child(41)::before, #input-9-open:checked ~ .field .cell:nth-child(49)::before, #input-9-open:checked ~ .field .cell:nth-child(34)::before, #input-9-open:checked ~ .field .cell:nth-child(42)::before, #input-9-open:checked ~ .field .cell:nth-child(50)::before, #input-9-open:checked ~ .field .cell:nth-child(11)::before, #input-9-open:checked ~ .field .cell:nth-child(19)::before, #input-9-open:checked ~ .field .cell:nth-child(27)::before, #input-9-open:checked ~ .field .cell:nth-child(3)::before {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-9-open:checked ~ .field .cell:nth-child(2) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(2) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(10) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(10) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(18) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(18) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(26) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(26) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(9) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(9) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(1) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(1) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(17) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(17) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(25) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(25) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(33) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(33) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(41) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(41) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(49) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(49) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(34) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(34) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(42) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(42) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(50) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(50) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(11) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(11) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(19) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(19) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(27) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(27) .mark_as_flag, #input-9-open:checked ~ .field .cell:nth-child(3) .mark_as_opened,
+#input-9-open:checked ~ .field .cell:nth-child(3) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(11)::before {
+  content: "1";
   display: none;
 }
 
@@ -575,12 +745,12 @@ input {
   align-items: center;
 }
 
-#input-10-open:checked ~ .field .cell:nth-child(11) .mark_as_opened {
+#input-10-open:checked ~ .field .cell:nth-child(11) .mark_as_opened,
+#input-10-open:checked ~ .field .cell:nth-child(11) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(12)::before {
-  content: "2";
   display: none;
 }
 
@@ -613,12 +783,13 @@ input {
   align-items: center;
 }
 
-#input-11-open:checked ~ .field .cell:nth-child(12) .mark_as_opened {
+#input-11-open:checked ~ .field .cell:nth-child(12) .mark_as_opened,
+#input-11-open:checked ~ .field .cell:nth-child(12) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(13)::before {
-  content: "1";
+  content: "2";
   display: none;
 }
 
@@ -651,7 +822,8 @@ input {
   align-items: center;
 }
 
-#input-12-open:checked ~ .field .cell:nth-child(13) .mark_as_opened {
+#input-12-open:checked ~ .field .cell:nth-child(13) .mark_as_opened,
+#input-12-open:checked ~ .field .cell:nth-child(13) .mark_as_flag {
   display: none;
 }
 
@@ -689,12 +861,13 @@ input {
   align-items: center;
 }
 
-#input-13-open:checked ~ .field .cell:nth-child(14) .mark_as_opened {
+#input-13-open:checked ~ .field .cell:nth-child(14) .mark_as_opened,
+#input-13-open:checked ~ .field .cell:nth-child(14) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(15)::before {
-  content: "";
+  content: "1";
   display: none;
 }
 
@@ -727,22 +900,8 @@ input {
   align-items: center;
 }
 
-#input-14-open:checked ~ .field .cell:nth-child(15) .mark_as_opened {
-  display: none;
-}
-
-#input-14-open:checked ~ .field .cell:nth-child(7), #input-14-open:checked ~ .field .cell:nth-child(15), #input-14-open:checked ~ .field .cell:nth-child(23), #input-14-open:checked ~ .field .cell:nth-child(31), #input-14-open:checked ~ .field .cell:nth-child(39), #input-14-open:checked ~ .field .cell:nth-child(22), #input-14-open:checked ~ .field .cell:nth-child(30), #input-14-open:checked ~ .field .cell:nth-child(38), #input-14-open:checked ~ .field .cell:nth-child(24), #input-14-open:checked ~ .field .cell:nth-child(16), #input-14-open:checked ~ .field .cell:nth-child(8), #input-14-open:checked ~ .field .cell:nth-child(32), #input-14-open:checked ~ .field .cell:nth-child(40), #input-14-open:checked ~ .field .cell:nth-child(14), #input-14-open:checked ~ .field .cell:nth-child(6), #input-14-open:checked ~ .field .cell:nth-child(5), #input-14-open:checked ~ .field .cell:nth-child(13), #input-14-open:checked ~ .field .cell:nth-child(4), #input-14-open:checked ~ .field .cell:nth-child(12) {
-  background-color: #EEE;
-}
-
-#input-14-open:checked ~ .field .cell:nth-child(7)::before, #input-14-open:checked ~ .field .cell:nth-child(15)::before, #input-14-open:checked ~ .field .cell:nth-child(23)::before, #input-14-open:checked ~ .field .cell:nth-child(31)::before, #input-14-open:checked ~ .field .cell:nth-child(39)::before, #input-14-open:checked ~ .field .cell:nth-child(22)::before, #input-14-open:checked ~ .field .cell:nth-child(30)::before, #input-14-open:checked ~ .field .cell:nth-child(38)::before, #input-14-open:checked ~ .field .cell:nth-child(24)::before, #input-14-open:checked ~ .field .cell:nth-child(16)::before, #input-14-open:checked ~ .field .cell:nth-child(8)::before, #input-14-open:checked ~ .field .cell:nth-child(32)::before, #input-14-open:checked ~ .field .cell:nth-child(40)::before, #input-14-open:checked ~ .field .cell:nth-child(14)::before, #input-14-open:checked ~ .field .cell:nth-child(6)::before, #input-14-open:checked ~ .field .cell:nth-child(5)::before, #input-14-open:checked ~ .field .cell:nth-child(13)::before, #input-14-open:checked ~ .field .cell:nth-child(4)::before, #input-14-open:checked ~ .field .cell:nth-child(12)::before {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-#input-14-open:checked ~ .field .cell:nth-child(7) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(15) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(23) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(31) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(39) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(22) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(30) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(38) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(24) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(16) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(8) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(32) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(40) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(14) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(6) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(5) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(13) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(4) .mark_as_opened, #input-14-open:checked ~ .field .cell:nth-child(12) .mark_as_opened {
+#input-14-open:checked ~ .field .cell:nth-child(15) .mark_as_opened,
+#input-14-open:checked ~ .field .cell:nth-child(15) .mark_as_flag {
   display: none;
 }
 
@@ -780,26 +939,47 @@ input {
   align-items: center;
 }
 
-#input-15-open:checked ~ .field .cell:nth-child(16) .mark_as_opened {
+#input-15-open:checked ~ .field .cell:nth-child(16) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(16) .mark_as_flag {
   display: none;
 }
 
-#input-15-open:checked ~ .field .cell:nth-child(8), #input-15-open:checked ~ .field .cell:nth-child(16), #input-15-open:checked ~ .field .cell:nth-child(24), #input-15-open:checked ~ .field .cell:nth-child(32), #input-15-open:checked ~ .field .cell:nth-child(40), #input-15-open:checked ~ .field .cell:nth-child(23), #input-15-open:checked ~ .field .cell:nth-child(15), #input-15-open:checked ~ .field .cell:nth-child(7), #input-15-open:checked ~ .field .cell:nth-child(6), #input-15-open:checked ~ .field .cell:nth-child(14), #input-15-open:checked ~ .field .cell:nth-child(5), #input-15-open:checked ~ .field .cell:nth-child(13), #input-15-open:checked ~ .field .cell:nth-child(4), #input-15-open:checked ~ .field .cell:nth-child(12), #input-15-open:checked ~ .field .cell:nth-child(22), #input-15-open:checked ~ .field .cell:nth-child(31), #input-15-open:checked ~ .field .cell:nth-child(39), #input-15-open:checked ~ .field .cell:nth-child(30), #input-15-open:checked ~ .field .cell:nth-child(38) {
+#input-15-open:checked ~ .field .cell:nth-child(8), #input-15-open:checked ~ .field .cell:nth-child(16), #input-15-open:checked ~ .field .cell:nth-child(24), #input-15-open:checked ~ .field .cell:nth-child(32), #input-15-open:checked ~ .field .cell:nth-child(40), #input-15-open:checked ~ .field .cell:nth-child(48), #input-15-open:checked ~ .field .cell:nth-child(31), #input-15-open:checked ~ .field .cell:nth-child(39), #input-15-open:checked ~ .field .cell:nth-child(47), #input-15-open:checked ~ .field .cell:nth-child(30), #input-15-open:checked ~ .field .cell:nth-child(38), #input-15-open:checked ~ .field .cell:nth-child(46), #input-15-open:checked ~ .field .cell:nth-child(23), #input-15-open:checked ~ .field .cell:nth-child(15), #input-15-open:checked ~ .field .cell:nth-child(7), #input-15-open:checked ~ .field .cell:nth-child(6), #input-15-open:checked ~ .field .cell:nth-child(14), #input-15-open:checked ~ .field .cell:nth-child(5), #input-15-open:checked ~ .field .cell:nth-child(13) {
   background-color: #EEE;
 }
 
-#input-15-open:checked ~ .field .cell:nth-child(8)::before, #input-15-open:checked ~ .field .cell:nth-child(16)::before, #input-15-open:checked ~ .field .cell:nth-child(24)::before, #input-15-open:checked ~ .field .cell:nth-child(32)::before, #input-15-open:checked ~ .field .cell:nth-child(40)::before, #input-15-open:checked ~ .field .cell:nth-child(23)::before, #input-15-open:checked ~ .field .cell:nth-child(15)::before, #input-15-open:checked ~ .field .cell:nth-child(7)::before, #input-15-open:checked ~ .field .cell:nth-child(6)::before, #input-15-open:checked ~ .field .cell:nth-child(14)::before, #input-15-open:checked ~ .field .cell:nth-child(5)::before, #input-15-open:checked ~ .field .cell:nth-child(13)::before, #input-15-open:checked ~ .field .cell:nth-child(4)::before, #input-15-open:checked ~ .field .cell:nth-child(12)::before, #input-15-open:checked ~ .field .cell:nth-child(22)::before, #input-15-open:checked ~ .field .cell:nth-child(31)::before, #input-15-open:checked ~ .field .cell:nth-child(39)::before, #input-15-open:checked ~ .field .cell:nth-child(30)::before, #input-15-open:checked ~ .field .cell:nth-child(38)::before {
+#input-15-open:checked ~ .field .cell:nth-child(8)::before, #input-15-open:checked ~ .field .cell:nth-child(16)::before, #input-15-open:checked ~ .field .cell:nth-child(24)::before, #input-15-open:checked ~ .field .cell:nth-child(32)::before, #input-15-open:checked ~ .field .cell:nth-child(40)::before, #input-15-open:checked ~ .field .cell:nth-child(48)::before, #input-15-open:checked ~ .field .cell:nth-child(31)::before, #input-15-open:checked ~ .field .cell:nth-child(39)::before, #input-15-open:checked ~ .field .cell:nth-child(47)::before, #input-15-open:checked ~ .field .cell:nth-child(30)::before, #input-15-open:checked ~ .field .cell:nth-child(38)::before, #input-15-open:checked ~ .field .cell:nth-child(46)::before, #input-15-open:checked ~ .field .cell:nth-child(23)::before, #input-15-open:checked ~ .field .cell:nth-child(15)::before, #input-15-open:checked ~ .field .cell:nth-child(7)::before, #input-15-open:checked ~ .field .cell:nth-child(6)::before, #input-15-open:checked ~ .field .cell:nth-child(14)::before, #input-15-open:checked ~ .field .cell:nth-child(5)::before, #input-15-open:checked ~ .field .cell:nth-child(13)::before {
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
 }
 
-#input-15-open:checked ~ .field .cell:nth-child(8) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(16) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(24) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(32) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(40) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(23) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(15) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(7) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(6) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(14) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(5) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(13) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(4) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(12) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(22) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(31) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(39) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(30) .mark_as_opened, #input-15-open:checked ~ .field .cell:nth-child(38) .mark_as_opened {
+#input-15-open:checked ~ .field .cell:nth-child(8) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(8) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(16) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(16) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(24) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(24) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(32) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(32) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(40) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(40) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(48) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(48) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(31) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(31) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(39) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(39) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(47) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(47) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(30) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(30) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(38) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(38) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(46) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(46) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(23) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(23) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(15) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(15) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(7) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(7) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(6) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(6) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(14) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(14) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(5) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(5) .mark_as_flag, #input-15-open:checked ~ .field .cell:nth-child(13) .mark_as_opened,
+#input-15-open:checked ~ .field .cell:nth-child(13) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(17)::before {
+  content: "";
   display: none;
 }
 
@@ -832,12 +1012,46 @@ input {
   align-items: center;
 }
 
-#input-16-open:checked ~ .field .cell:nth-child(17) .mark_as_opened {
+#input-16-open:checked ~ .field .cell:nth-child(17) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(17) .mark_as_flag {
+  display: none;
+}
+
+#input-16-open:checked ~ .field .cell:nth-child(9), #input-16-open:checked ~ .field .cell:nth-child(1), #input-16-open:checked ~ .field .cell:nth-child(2), #input-16-open:checked ~ .field .cell:nth-child(10), #input-16-open:checked ~ .field .cell:nth-child(18), #input-16-open:checked ~ .field .cell:nth-child(26), #input-16-open:checked ~ .field .cell:nth-child(17), #input-16-open:checked ~ .field .cell:nth-child(25), #input-16-open:checked ~ .field .cell:nth-child(33), #input-16-open:checked ~ .field .cell:nth-child(41), #input-16-open:checked ~ .field .cell:nth-child(49), #input-16-open:checked ~ .field .cell:nth-child(34), #input-16-open:checked ~ .field .cell:nth-child(42), #input-16-open:checked ~ .field .cell:nth-child(50), #input-16-open:checked ~ .field .cell:nth-child(11), #input-16-open:checked ~ .field .cell:nth-child(19), #input-16-open:checked ~ .field .cell:nth-child(27), #input-16-open:checked ~ .field .cell:nth-child(3) {
+  background-color: #EEE;
+}
+
+#input-16-open:checked ~ .field .cell:nth-child(9)::before, #input-16-open:checked ~ .field .cell:nth-child(1)::before, #input-16-open:checked ~ .field .cell:nth-child(2)::before, #input-16-open:checked ~ .field .cell:nth-child(10)::before, #input-16-open:checked ~ .field .cell:nth-child(18)::before, #input-16-open:checked ~ .field .cell:nth-child(26)::before, #input-16-open:checked ~ .field .cell:nth-child(17)::before, #input-16-open:checked ~ .field .cell:nth-child(25)::before, #input-16-open:checked ~ .field .cell:nth-child(33)::before, #input-16-open:checked ~ .field .cell:nth-child(41)::before, #input-16-open:checked ~ .field .cell:nth-child(49)::before, #input-16-open:checked ~ .field .cell:nth-child(34)::before, #input-16-open:checked ~ .field .cell:nth-child(42)::before, #input-16-open:checked ~ .field .cell:nth-child(50)::before, #input-16-open:checked ~ .field .cell:nth-child(11)::before, #input-16-open:checked ~ .field .cell:nth-child(19)::before, #input-16-open:checked ~ .field .cell:nth-child(27)::before, #input-16-open:checked ~ .field .cell:nth-child(3)::before {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-16-open:checked ~ .field .cell:nth-child(9) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(9) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(1) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(1) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(2) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(2) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(10) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(10) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(18) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(18) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(26) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(26) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(17) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(17) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(25) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(25) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(33) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(33) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(41) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(41) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(49) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(49) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(34) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(34) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(42) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(42) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(50) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(50) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(11) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(11) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(19) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(19) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(27) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(27) .mark_as_flag, #input-16-open:checked ~ .field .cell:nth-child(3) .mark_as_opened,
+#input-16-open:checked ~ .field .cell:nth-child(3) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(18)::before {
-  content: "2";
+  content: "";
   display: none;
 }
 
@@ -870,7 +1084,41 @@ input {
   align-items: center;
 }
 
-#input-17-open:checked ~ .field .cell:nth-child(18) .mark_as_opened {
+#input-17-open:checked ~ .field .cell:nth-child(18) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(18) .mark_as_flag {
+  display: none;
+}
+
+#input-17-open:checked ~ .field .cell:nth-child(10), #input-17-open:checked ~ .field .cell:nth-child(2), #input-17-open:checked ~ .field .cell:nth-child(1), #input-17-open:checked ~ .field .cell:nth-child(9), #input-17-open:checked ~ .field .cell:nth-child(17), #input-17-open:checked ~ .field .cell:nth-child(25), #input-17-open:checked ~ .field .cell:nth-child(33), #input-17-open:checked ~ .field .cell:nth-child(41), #input-17-open:checked ~ .field .cell:nth-child(49), #input-17-open:checked ~ .field .cell:nth-child(34), #input-17-open:checked ~ .field .cell:nth-child(42), #input-17-open:checked ~ .field .cell:nth-child(50), #input-17-open:checked ~ .field .cell:nth-child(26), #input-17-open:checked ~ .field .cell:nth-child(18), #input-17-open:checked ~ .field .cell:nth-child(11), #input-17-open:checked ~ .field .cell:nth-child(19), #input-17-open:checked ~ .field .cell:nth-child(27), #input-17-open:checked ~ .field .cell:nth-child(3) {
+  background-color: #EEE;
+}
+
+#input-17-open:checked ~ .field .cell:nth-child(10)::before, #input-17-open:checked ~ .field .cell:nth-child(2)::before, #input-17-open:checked ~ .field .cell:nth-child(1)::before, #input-17-open:checked ~ .field .cell:nth-child(9)::before, #input-17-open:checked ~ .field .cell:nth-child(17)::before, #input-17-open:checked ~ .field .cell:nth-child(25)::before, #input-17-open:checked ~ .field .cell:nth-child(33)::before, #input-17-open:checked ~ .field .cell:nth-child(41)::before, #input-17-open:checked ~ .field .cell:nth-child(49)::before, #input-17-open:checked ~ .field .cell:nth-child(34)::before, #input-17-open:checked ~ .field .cell:nth-child(42)::before, #input-17-open:checked ~ .field .cell:nth-child(50)::before, #input-17-open:checked ~ .field .cell:nth-child(26)::before, #input-17-open:checked ~ .field .cell:nth-child(18)::before, #input-17-open:checked ~ .field .cell:nth-child(11)::before, #input-17-open:checked ~ .field .cell:nth-child(19)::before, #input-17-open:checked ~ .field .cell:nth-child(27)::before, #input-17-open:checked ~ .field .cell:nth-child(3)::before {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-17-open:checked ~ .field .cell:nth-child(10) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(10) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(2) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(2) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(1) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(1) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(9) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(9) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(17) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(17) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(25) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(25) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(33) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(33) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(41) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(41) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(49) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(49) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(34) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(34) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(42) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(42) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(50) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(50) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(26) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(26) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(18) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(18) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(11) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(11) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(19) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(19) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(27) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(27) .mark_as_flag, #input-17-open:checked ~ .field .cell:nth-child(3) .mark_as_opened,
+#input-17-open:checked ~ .field .cell:nth-child(3) .mark_as_flag {
   display: none;
 }
 
@@ -908,12 +1156,13 @@ input {
   align-items: center;
 }
 
-#input-18-open:checked ~ .field .cell:nth-child(19) .mark_as_opened {
+#input-18-open:checked ~ .field .cell:nth-child(19) .mark_as_opened,
+#input-18-open:checked ~ .field .cell:nth-child(19) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(20)::before {
-  content: "2";
+  content: "1";
   display: none;
 }
 
@@ -946,11 +1195,13 @@ input {
   align-items: center;
 }
 
-#input-19-open:checked ~ .field .cell:nth-child(20) .mark_as_opened {
+#input-19-open:checked ~ .field .cell:nth-child(20) .mark_as_opened,
+#input-19-open:checked ~ .field .cell:nth-child(20) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(21)::before {
+  content: "2";
   display: none;
 }
 
@@ -983,12 +1234,12 @@ input {
   align-items: center;
 }
 
-#input-20-open:checked ~ .field .cell:nth-child(21) .mark_as_opened {
+#input-20-open:checked ~ .field .cell:nth-child(21) .mark_as_opened,
+#input-20-open:checked ~ .field .cell:nth-child(21) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(22)::before {
-  content: "1";
   display: none;
 }
 
@@ -1021,12 +1272,13 @@ input {
   align-items: center;
 }
 
-#input-21-open:checked ~ .field .cell:nth-child(22) .mark_as_opened {
+#input-21-open:checked ~ .field .cell:nth-child(22) .mark_as_opened,
+#input-21-open:checked ~ .field .cell:nth-child(22) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(23)::before {
-  content: "";
+  content: "1";
   display: none;
 }
 
@@ -1059,22 +1311,8 @@ input {
   align-items: center;
 }
 
-#input-22-open:checked ~ .field .cell:nth-child(23) .mark_as_opened {
-  display: none;
-}
-
-#input-22-open:checked ~ .field .cell:nth-child(15), #input-22-open:checked ~ .field .cell:nth-child(7), #input-22-open:checked ~ .field .cell:nth-child(6), #input-22-open:checked ~ .field .cell:nth-child(14), #input-22-open:checked ~ .field .cell:nth-child(5), #input-22-open:checked ~ .field .cell:nth-child(13), #input-22-open:checked ~ .field .cell:nth-child(4), #input-22-open:checked ~ .field .cell:nth-child(12), #input-22-open:checked ~ .field .cell:nth-child(8), #input-22-open:checked ~ .field .cell:nth-child(16), #input-22-open:checked ~ .field .cell:nth-child(24), #input-22-open:checked ~ .field .cell:nth-child(32), #input-22-open:checked ~ .field .cell:nth-child(40), #input-22-open:checked ~ .field .cell:nth-child(23), #input-22-open:checked ~ .field .cell:nth-child(31), #input-22-open:checked ~ .field .cell:nth-child(39), #input-22-open:checked ~ .field .cell:nth-child(22), #input-22-open:checked ~ .field .cell:nth-child(30), #input-22-open:checked ~ .field .cell:nth-child(38) {
-  background-color: #EEE;
-}
-
-#input-22-open:checked ~ .field .cell:nth-child(15)::before, #input-22-open:checked ~ .field .cell:nth-child(7)::before, #input-22-open:checked ~ .field .cell:nth-child(6)::before, #input-22-open:checked ~ .field .cell:nth-child(14)::before, #input-22-open:checked ~ .field .cell:nth-child(5)::before, #input-22-open:checked ~ .field .cell:nth-child(13)::before, #input-22-open:checked ~ .field .cell:nth-child(4)::before, #input-22-open:checked ~ .field .cell:nth-child(12)::before, #input-22-open:checked ~ .field .cell:nth-child(8)::before, #input-22-open:checked ~ .field .cell:nth-child(16)::before, #input-22-open:checked ~ .field .cell:nth-child(24)::before, #input-22-open:checked ~ .field .cell:nth-child(32)::before, #input-22-open:checked ~ .field .cell:nth-child(40)::before, #input-22-open:checked ~ .field .cell:nth-child(23)::before, #input-22-open:checked ~ .field .cell:nth-child(31)::before, #input-22-open:checked ~ .field .cell:nth-child(39)::before, #input-22-open:checked ~ .field .cell:nth-child(22)::before, #input-22-open:checked ~ .field .cell:nth-child(30)::before, #input-22-open:checked ~ .field .cell:nth-child(38)::before {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-#input-22-open:checked ~ .field .cell:nth-child(15) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(7) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(6) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(14) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(5) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(13) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(4) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(12) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(8) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(16) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(24) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(32) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(40) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(23) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(31) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(39) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(22) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(30) .mark_as_opened, #input-22-open:checked ~ .field .cell:nth-child(38) .mark_as_opened {
+#input-22-open:checked ~ .field .cell:nth-child(23) .mark_as_opened,
+#input-22-open:checked ~ .field .cell:nth-child(23) .mark_as_flag {
   display: none;
 }
 
@@ -1112,27 +1350,47 @@ input {
   align-items: center;
 }
 
-#input-23-open:checked ~ .field .cell:nth-child(24) .mark_as_opened {
+#input-23-open:checked ~ .field .cell:nth-child(24) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(24) .mark_as_flag {
   display: none;
 }
 
-#input-23-open:checked ~ .field .cell:nth-child(16), #input-23-open:checked ~ .field .cell:nth-child(8), #input-23-open:checked ~ .field .cell:nth-child(7), #input-23-open:checked ~ .field .cell:nth-child(15), #input-23-open:checked ~ .field .cell:nth-child(23), #input-23-open:checked ~ .field .cell:nth-child(31), #input-23-open:checked ~ .field .cell:nth-child(39), #input-23-open:checked ~ .field .cell:nth-child(22), #input-23-open:checked ~ .field .cell:nth-child(30), #input-23-open:checked ~ .field .cell:nth-child(38), #input-23-open:checked ~ .field .cell:nth-child(24), #input-23-open:checked ~ .field .cell:nth-child(32), #input-23-open:checked ~ .field .cell:nth-child(40), #input-23-open:checked ~ .field .cell:nth-child(14), #input-23-open:checked ~ .field .cell:nth-child(6), #input-23-open:checked ~ .field .cell:nth-child(5), #input-23-open:checked ~ .field .cell:nth-child(13), #input-23-open:checked ~ .field .cell:nth-child(4), #input-23-open:checked ~ .field .cell:nth-child(12) {
+#input-23-open:checked ~ .field .cell:nth-child(16), #input-23-open:checked ~ .field .cell:nth-child(8), #input-23-open:checked ~ .field .cell:nth-child(7), #input-23-open:checked ~ .field .cell:nth-child(15), #input-23-open:checked ~ .field .cell:nth-child(6), #input-23-open:checked ~ .field .cell:nth-child(14), #input-23-open:checked ~ .field .cell:nth-child(5), #input-23-open:checked ~ .field .cell:nth-child(13), #input-23-open:checked ~ .field .cell:nth-child(24), #input-23-open:checked ~ .field .cell:nth-child(32), #input-23-open:checked ~ .field .cell:nth-child(40), #input-23-open:checked ~ .field .cell:nth-child(48), #input-23-open:checked ~ .field .cell:nth-child(31), #input-23-open:checked ~ .field .cell:nth-child(39), #input-23-open:checked ~ .field .cell:nth-child(47), #input-23-open:checked ~ .field .cell:nth-child(30), #input-23-open:checked ~ .field .cell:nth-child(38), #input-23-open:checked ~ .field .cell:nth-child(46), #input-23-open:checked ~ .field .cell:nth-child(23) {
   background-color: #EEE;
 }
 
-#input-23-open:checked ~ .field .cell:nth-child(16)::before, #input-23-open:checked ~ .field .cell:nth-child(8)::before, #input-23-open:checked ~ .field .cell:nth-child(7)::before, #input-23-open:checked ~ .field .cell:nth-child(15)::before, #input-23-open:checked ~ .field .cell:nth-child(23)::before, #input-23-open:checked ~ .field .cell:nth-child(31)::before, #input-23-open:checked ~ .field .cell:nth-child(39)::before, #input-23-open:checked ~ .field .cell:nth-child(22)::before, #input-23-open:checked ~ .field .cell:nth-child(30)::before, #input-23-open:checked ~ .field .cell:nth-child(38)::before, #input-23-open:checked ~ .field .cell:nth-child(24)::before, #input-23-open:checked ~ .field .cell:nth-child(32)::before, #input-23-open:checked ~ .field .cell:nth-child(40)::before, #input-23-open:checked ~ .field .cell:nth-child(14)::before, #input-23-open:checked ~ .field .cell:nth-child(6)::before, #input-23-open:checked ~ .field .cell:nth-child(5)::before, #input-23-open:checked ~ .field .cell:nth-child(13)::before, #input-23-open:checked ~ .field .cell:nth-child(4)::before, #input-23-open:checked ~ .field .cell:nth-child(12)::before {
+#input-23-open:checked ~ .field .cell:nth-child(16)::before, #input-23-open:checked ~ .field .cell:nth-child(8)::before, #input-23-open:checked ~ .field .cell:nth-child(7)::before, #input-23-open:checked ~ .field .cell:nth-child(15)::before, #input-23-open:checked ~ .field .cell:nth-child(6)::before, #input-23-open:checked ~ .field .cell:nth-child(14)::before, #input-23-open:checked ~ .field .cell:nth-child(5)::before, #input-23-open:checked ~ .field .cell:nth-child(13)::before, #input-23-open:checked ~ .field .cell:nth-child(24)::before, #input-23-open:checked ~ .field .cell:nth-child(32)::before, #input-23-open:checked ~ .field .cell:nth-child(40)::before, #input-23-open:checked ~ .field .cell:nth-child(48)::before, #input-23-open:checked ~ .field .cell:nth-child(31)::before, #input-23-open:checked ~ .field .cell:nth-child(39)::before, #input-23-open:checked ~ .field .cell:nth-child(47)::before, #input-23-open:checked ~ .field .cell:nth-child(30)::before, #input-23-open:checked ~ .field .cell:nth-child(38)::before, #input-23-open:checked ~ .field .cell:nth-child(46)::before, #input-23-open:checked ~ .field .cell:nth-child(23)::before {
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
 }
 
-#input-23-open:checked ~ .field .cell:nth-child(16) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(8) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(7) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(15) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(23) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(31) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(39) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(22) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(30) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(38) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(24) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(32) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(40) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(14) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(6) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(5) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(13) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(4) .mark_as_opened, #input-23-open:checked ~ .field .cell:nth-child(12) .mark_as_opened {
+#input-23-open:checked ~ .field .cell:nth-child(16) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(16) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(8) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(8) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(7) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(7) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(15) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(15) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(6) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(6) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(14) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(14) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(5) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(5) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(13) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(13) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(24) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(24) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(32) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(32) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(40) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(40) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(48) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(48) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(31) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(31) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(39) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(39) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(47) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(47) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(30) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(30) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(38) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(38) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(46) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(46) .mark_as_flag, #input-23-open:checked ~ .field .cell:nth-child(23) .mark_as_opened,
+#input-23-open:checked ~ .field .cell:nth-child(23) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(25)::before {
-  content: "3";
+  content: "";
   display: none;
 }
 
@@ -1165,12 +1423,46 @@ input {
   align-items: center;
 }
 
-#input-24-open:checked ~ .field .cell:nth-child(25) .mark_as_opened {
+#input-24-open:checked ~ .field .cell:nth-child(25) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(25) .mark_as_flag {
+  display: none;
+}
+
+#input-24-open:checked ~ .field .cell:nth-child(17), #input-24-open:checked ~ .field .cell:nth-child(9), #input-24-open:checked ~ .field .cell:nth-child(1), #input-24-open:checked ~ .field .cell:nth-child(2), #input-24-open:checked ~ .field .cell:nth-child(10), #input-24-open:checked ~ .field .cell:nth-child(18), #input-24-open:checked ~ .field .cell:nth-child(26), #input-24-open:checked ~ .field .cell:nth-child(25), #input-24-open:checked ~ .field .cell:nth-child(33), #input-24-open:checked ~ .field .cell:nth-child(41), #input-24-open:checked ~ .field .cell:nth-child(49), #input-24-open:checked ~ .field .cell:nth-child(34), #input-24-open:checked ~ .field .cell:nth-child(42), #input-24-open:checked ~ .field .cell:nth-child(50), #input-24-open:checked ~ .field .cell:nth-child(11), #input-24-open:checked ~ .field .cell:nth-child(19), #input-24-open:checked ~ .field .cell:nth-child(27), #input-24-open:checked ~ .field .cell:nth-child(3) {
+  background-color: #EEE;
+}
+
+#input-24-open:checked ~ .field .cell:nth-child(17)::before, #input-24-open:checked ~ .field .cell:nth-child(9)::before, #input-24-open:checked ~ .field .cell:nth-child(1)::before, #input-24-open:checked ~ .field .cell:nth-child(2)::before, #input-24-open:checked ~ .field .cell:nth-child(10)::before, #input-24-open:checked ~ .field .cell:nth-child(18)::before, #input-24-open:checked ~ .field .cell:nth-child(26)::before, #input-24-open:checked ~ .field .cell:nth-child(25)::before, #input-24-open:checked ~ .field .cell:nth-child(33)::before, #input-24-open:checked ~ .field .cell:nth-child(41)::before, #input-24-open:checked ~ .field .cell:nth-child(49)::before, #input-24-open:checked ~ .field .cell:nth-child(34)::before, #input-24-open:checked ~ .field .cell:nth-child(42)::before, #input-24-open:checked ~ .field .cell:nth-child(50)::before, #input-24-open:checked ~ .field .cell:nth-child(11)::before, #input-24-open:checked ~ .field .cell:nth-child(19)::before, #input-24-open:checked ~ .field .cell:nth-child(27)::before, #input-24-open:checked ~ .field .cell:nth-child(3)::before {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-24-open:checked ~ .field .cell:nth-child(17) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(17) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(9) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(9) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(1) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(1) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(2) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(2) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(10) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(10) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(18) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(18) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(26) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(26) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(25) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(25) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(33) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(33) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(41) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(41) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(49) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(49) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(34) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(34) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(42) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(42) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(50) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(50) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(11) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(11) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(19) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(19) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(27) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(27) .mark_as_flag, #input-24-open:checked ~ .field .cell:nth-child(3) .mark_as_opened,
+#input-24-open:checked ~ .field .cell:nth-child(3) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(26)::before {
-  content: "3";
+  content: "1";
   display: none;
 }
 
@@ -1203,7 +1495,8 @@ input {
   align-items: center;
 }
 
-#input-25-open:checked ~ .field .cell:nth-child(26) .mark_as_opened {
+#input-25-open:checked ~ .field .cell:nth-child(26) .mark_as_opened,
+#input-25-open:checked ~ .field .cell:nth-child(26) .mark_as_flag {
   display: none;
 }
 
@@ -1241,12 +1534,13 @@ input {
   align-items: center;
 }
 
-#input-26-open:checked ~ .field .cell:nth-child(27) .mark_as_opened {
+#input-26-open:checked ~ .field .cell:nth-child(27) .mark_as_opened,
+#input-26-open:checked ~ .field .cell:nth-child(27) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(28)::before {
-  content: "1";
+  content: "2";
   display: none;
 }
 
@@ -1279,12 +1573,13 @@ input {
   align-items: center;
 }
 
-#input-27-open:checked ~ .field .cell:nth-child(28) .mark_as_opened {
+#input-27-open:checked ~ .field .cell:nth-child(28) .mark_as_opened,
+#input-27-open:checked ~ .field .cell:nth-child(28) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(29)::before {
-  content: "1";
+  content: "2";
   display: none;
 }
 
@@ -1317,12 +1612,13 @@ input {
   align-items: center;
 }
 
-#input-28-open:checked ~ .field .cell:nth-child(29) .mark_as_opened {
+#input-28-open:checked ~ .field .cell:nth-child(29) .mark_as_opened,
+#input-28-open:checked ~ .field .cell:nth-child(29) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(30)::before {
-  content: "1";
+  content: "2";
   display: none;
 }
 
@@ -1355,12 +1651,13 @@ input {
   align-items: center;
 }
 
-#input-29-open:checked ~ .field .cell:nth-child(30) .mark_as_opened {
+#input-29-open:checked ~ .field .cell:nth-child(30) .mark_as_opened,
+#input-29-open:checked ~ .field .cell:nth-child(30) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(31)::before {
-  content: "";
+  content: "1";
   display: none;
 }
 
@@ -1393,22 +1690,8 @@ input {
   align-items: center;
 }
 
-#input-30-open:checked ~ .field .cell:nth-child(31) .mark_as_opened {
-  display: none;
-}
-
-#input-30-open:checked ~ .field .cell:nth-child(23), #input-30-open:checked ~ .field .cell:nth-child(15), #input-30-open:checked ~ .field .cell:nth-child(7), #input-30-open:checked ~ .field .cell:nth-child(6), #input-30-open:checked ~ .field .cell:nth-child(14), #input-30-open:checked ~ .field .cell:nth-child(5), #input-30-open:checked ~ .field .cell:nth-child(13), #input-30-open:checked ~ .field .cell:nth-child(4), #input-30-open:checked ~ .field .cell:nth-child(12), #input-30-open:checked ~ .field .cell:nth-child(8), #input-30-open:checked ~ .field .cell:nth-child(16), #input-30-open:checked ~ .field .cell:nth-child(24), #input-30-open:checked ~ .field .cell:nth-child(32), #input-30-open:checked ~ .field .cell:nth-child(40), #input-30-open:checked ~ .field .cell:nth-child(31), #input-30-open:checked ~ .field .cell:nth-child(39), #input-30-open:checked ~ .field .cell:nth-child(22), #input-30-open:checked ~ .field .cell:nth-child(30), #input-30-open:checked ~ .field .cell:nth-child(38) {
-  background-color: #EEE;
-}
-
-#input-30-open:checked ~ .field .cell:nth-child(23)::before, #input-30-open:checked ~ .field .cell:nth-child(15)::before, #input-30-open:checked ~ .field .cell:nth-child(7)::before, #input-30-open:checked ~ .field .cell:nth-child(6)::before, #input-30-open:checked ~ .field .cell:nth-child(14)::before, #input-30-open:checked ~ .field .cell:nth-child(5)::before, #input-30-open:checked ~ .field .cell:nth-child(13)::before, #input-30-open:checked ~ .field .cell:nth-child(4)::before, #input-30-open:checked ~ .field .cell:nth-child(12)::before, #input-30-open:checked ~ .field .cell:nth-child(8)::before, #input-30-open:checked ~ .field .cell:nth-child(16)::before, #input-30-open:checked ~ .field .cell:nth-child(24)::before, #input-30-open:checked ~ .field .cell:nth-child(32)::before, #input-30-open:checked ~ .field .cell:nth-child(40)::before, #input-30-open:checked ~ .field .cell:nth-child(31)::before, #input-30-open:checked ~ .field .cell:nth-child(39)::before, #input-30-open:checked ~ .field .cell:nth-child(22)::before, #input-30-open:checked ~ .field .cell:nth-child(30)::before, #input-30-open:checked ~ .field .cell:nth-child(38)::before {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-#input-30-open:checked ~ .field .cell:nth-child(23) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(15) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(7) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(6) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(14) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(5) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(13) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(4) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(12) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(8) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(16) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(24) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(32) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(40) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(31) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(39) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(22) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(30) .mark_as_opened, #input-30-open:checked ~ .field .cell:nth-child(38) .mark_as_opened {
+#input-30-open:checked ~ .field .cell:nth-child(31) .mark_as_opened,
+#input-30-open:checked ~ .field .cell:nth-child(31) .mark_as_flag {
   display: none;
 }
 
@@ -1446,26 +1729,47 @@ input {
   align-items: center;
 }
 
-#input-31-open:checked ~ .field .cell:nth-child(32) .mark_as_opened {
+#input-31-open:checked ~ .field .cell:nth-child(32) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(32) .mark_as_flag {
   display: none;
 }
 
-#input-31-open:checked ~ .field .cell:nth-child(24), #input-31-open:checked ~ .field .cell:nth-child(16), #input-31-open:checked ~ .field .cell:nth-child(8), #input-31-open:checked ~ .field .cell:nth-child(7), #input-31-open:checked ~ .field .cell:nth-child(15), #input-31-open:checked ~ .field .cell:nth-child(23), #input-31-open:checked ~ .field .cell:nth-child(31), #input-31-open:checked ~ .field .cell:nth-child(39), #input-31-open:checked ~ .field .cell:nth-child(22), #input-31-open:checked ~ .field .cell:nth-child(30), #input-31-open:checked ~ .field .cell:nth-child(38), #input-31-open:checked ~ .field .cell:nth-child(32), #input-31-open:checked ~ .field .cell:nth-child(40), #input-31-open:checked ~ .field .cell:nth-child(14), #input-31-open:checked ~ .field .cell:nth-child(6), #input-31-open:checked ~ .field .cell:nth-child(5), #input-31-open:checked ~ .field .cell:nth-child(13), #input-31-open:checked ~ .field .cell:nth-child(4), #input-31-open:checked ~ .field .cell:nth-child(12) {
+#input-31-open:checked ~ .field .cell:nth-child(24), #input-31-open:checked ~ .field .cell:nth-child(16), #input-31-open:checked ~ .field .cell:nth-child(8), #input-31-open:checked ~ .field .cell:nth-child(7), #input-31-open:checked ~ .field .cell:nth-child(15), #input-31-open:checked ~ .field .cell:nth-child(6), #input-31-open:checked ~ .field .cell:nth-child(14), #input-31-open:checked ~ .field .cell:nth-child(5), #input-31-open:checked ~ .field .cell:nth-child(13), #input-31-open:checked ~ .field .cell:nth-child(23), #input-31-open:checked ~ .field .cell:nth-child(32), #input-31-open:checked ~ .field .cell:nth-child(40), #input-31-open:checked ~ .field .cell:nth-child(48), #input-31-open:checked ~ .field .cell:nth-child(31), #input-31-open:checked ~ .field .cell:nth-child(39), #input-31-open:checked ~ .field .cell:nth-child(47), #input-31-open:checked ~ .field .cell:nth-child(30), #input-31-open:checked ~ .field .cell:nth-child(38), #input-31-open:checked ~ .field .cell:nth-child(46) {
   background-color: #EEE;
 }
 
-#input-31-open:checked ~ .field .cell:nth-child(24)::before, #input-31-open:checked ~ .field .cell:nth-child(16)::before, #input-31-open:checked ~ .field .cell:nth-child(8)::before, #input-31-open:checked ~ .field .cell:nth-child(7)::before, #input-31-open:checked ~ .field .cell:nth-child(15)::before, #input-31-open:checked ~ .field .cell:nth-child(23)::before, #input-31-open:checked ~ .field .cell:nth-child(31)::before, #input-31-open:checked ~ .field .cell:nth-child(39)::before, #input-31-open:checked ~ .field .cell:nth-child(22)::before, #input-31-open:checked ~ .field .cell:nth-child(30)::before, #input-31-open:checked ~ .field .cell:nth-child(38)::before, #input-31-open:checked ~ .field .cell:nth-child(32)::before, #input-31-open:checked ~ .field .cell:nth-child(40)::before, #input-31-open:checked ~ .field .cell:nth-child(14)::before, #input-31-open:checked ~ .field .cell:nth-child(6)::before, #input-31-open:checked ~ .field .cell:nth-child(5)::before, #input-31-open:checked ~ .field .cell:nth-child(13)::before, #input-31-open:checked ~ .field .cell:nth-child(4)::before, #input-31-open:checked ~ .field .cell:nth-child(12)::before {
+#input-31-open:checked ~ .field .cell:nth-child(24)::before, #input-31-open:checked ~ .field .cell:nth-child(16)::before, #input-31-open:checked ~ .field .cell:nth-child(8)::before, #input-31-open:checked ~ .field .cell:nth-child(7)::before, #input-31-open:checked ~ .field .cell:nth-child(15)::before, #input-31-open:checked ~ .field .cell:nth-child(6)::before, #input-31-open:checked ~ .field .cell:nth-child(14)::before, #input-31-open:checked ~ .field .cell:nth-child(5)::before, #input-31-open:checked ~ .field .cell:nth-child(13)::before, #input-31-open:checked ~ .field .cell:nth-child(23)::before, #input-31-open:checked ~ .field .cell:nth-child(32)::before, #input-31-open:checked ~ .field .cell:nth-child(40)::before, #input-31-open:checked ~ .field .cell:nth-child(48)::before, #input-31-open:checked ~ .field .cell:nth-child(31)::before, #input-31-open:checked ~ .field .cell:nth-child(39)::before, #input-31-open:checked ~ .field .cell:nth-child(47)::before, #input-31-open:checked ~ .field .cell:nth-child(30)::before, #input-31-open:checked ~ .field .cell:nth-child(38)::before, #input-31-open:checked ~ .field .cell:nth-child(46)::before {
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
 }
 
-#input-31-open:checked ~ .field .cell:nth-child(24) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(16) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(8) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(7) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(15) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(23) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(31) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(39) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(22) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(30) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(38) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(32) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(40) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(14) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(6) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(5) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(13) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(4) .mark_as_opened, #input-31-open:checked ~ .field .cell:nth-child(12) .mark_as_opened {
+#input-31-open:checked ~ .field .cell:nth-child(24) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(24) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(16) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(16) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(8) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(8) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(7) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(7) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(15) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(15) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(6) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(6) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(14) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(14) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(5) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(5) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(13) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(13) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(23) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(23) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(32) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(32) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(40) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(40) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(48) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(48) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(31) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(31) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(39) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(39) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(47) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(47) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(30) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(30) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(38) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(38) .mark_as_flag, #input-31-open:checked ~ .field .cell:nth-child(46) .mark_as_opened,
+#input-31-open:checked ~ .field .cell:nth-child(46) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(33)::before {
+  content: "";
   display: none;
 }
 
@@ -1498,11 +1802,46 @@ input {
   align-items: center;
 }
 
-#input-32-open:checked ~ .field .cell:nth-child(33) .mark_as_opened {
+#input-32-open:checked ~ .field .cell:nth-child(33) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(33) .mark_as_flag {
+  display: none;
+}
+
+#input-32-open:checked ~ .field .cell:nth-child(25), #input-32-open:checked ~ .field .cell:nth-child(17), #input-32-open:checked ~ .field .cell:nth-child(9), #input-32-open:checked ~ .field .cell:nth-child(1), #input-32-open:checked ~ .field .cell:nth-child(2), #input-32-open:checked ~ .field .cell:nth-child(10), #input-32-open:checked ~ .field .cell:nth-child(18), #input-32-open:checked ~ .field .cell:nth-child(26), #input-32-open:checked ~ .field .cell:nth-child(11), #input-32-open:checked ~ .field .cell:nth-child(19), #input-32-open:checked ~ .field .cell:nth-child(27), #input-32-open:checked ~ .field .cell:nth-child(3), #input-32-open:checked ~ .field .cell:nth-child(33), #input-32-open:checked ~ .field .cell:nth-child(41), #input-32-open:checked ~ .field .cell:nth-child(49), #input-32-open:checked ~ .field .cell:nth-child(34), #input-32-open:checked ~ .field .cell:nth-child(42), #input-32-open:checked ~ .field .cell:nth-child(50) {
+  background-color: #EEE;
+}
+
+#input-32-open:checked ~ .field .cell:nth-child(25)::before, #input-32-open:checked ~ .field .cell:nth-child(17)::before, #input-32-open:checked ~ .field .cell:nth-child(9)::before, #input-32-open:checked ~ .field .cell:nth-child(1)::before, #input-32-open:checked ~ .field .cell:nth-child(2)::before, #input-32-open:checked ~ .field .cell:nth-child(10)::before, #input-32-open:checked ~ .field .cell:nth-child(18)::before, #input-32-open:checked ~ .field .cell:nth-child(26)::before, #input-32-open:checked ~ .field .cell:nth-child(11)::before, #input-32-open:checked ~ .field .cell:nth-child(19)::before, #input-32-open:checked ~ .field .cell:nth-child(27)::before, #input-32-open:checked ~ .field .cell:nth-child(3)::before, #input-32-open:checked ~ .field .cell:nth-child(33)::before, #input-32-open:checked ~ .field .cell:nth-child(41)::before, #input-32-open:checked ~ .field .cell:nth-child(49)::before, #input-32-open:checked ~ .field .cell:nth-child(34)::before, #input-32-open:checked ~ .field .cell:nth-child(42)::before, #input-32-open:checked ~ .field .cell:nth-child(50)::before {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-32-open:checked ~ .field .cell:nth-child(25) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(25) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(17) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(17) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(9) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(9) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(1) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(1) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(2) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(2) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(10) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(10) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(18) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(18) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(26) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(26) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(11) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(11) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(19) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(19) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(27) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(27) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(3) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(3) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(33) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(33) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(41) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(41) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(49) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(49) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(34) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(34) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(42) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(42) .mark_as_flag, #input-32-open:checked ~ .field .cell:nth-child(50) .mark_as_opened,
+#input-32-open:checked ~ .field .cell:nth-child(50) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(34)::before {
+  content: "1";
   display: none;
 }
 
@@ -1535,12 +1874,12 @@ input {
   align-items: center;
 }
 
-#input-33-open:checked ~ .field .cell:nth-child(34) .mark_as_opened {
+#input-33-open:checked ~ .field .cell:nth-child(34) .mark_as_opened,
+#input-33-open:checked ~ .field .cell:nth-child(34) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(35)::before {
-  content: "1";
   display: none;
 }
 
@@ -1573,12 +1912,13 @@ input {
   align-items: center;
 }
 
-#input-34-open:checked ~ .field .cell:nth-child(35) .mark_as_opened {
+#input-34-open:checked ~ .field .cell:nth-child(35) .mark_as_opened,
+#input-34-open:checked ~ .field .cell:nth-child(35) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(36)::before {
-  content: "";
+  content: "4";
   display: none;
 }
 
@@ -1611,27 +1951,12 @@ input {
   align-items: center;
 }
 
-#input-35-open:checked ~ .field .cell:nth-child(36) .mark_as_opened {
-  display: none;
-}
-
-#input-35-open:checked ~ .field .cell:nth-child(28), #input-35-open:checked ~ .field .cell:nth-child(44), #input-35-open:checked ~ .field .cell:nth-child(27), #input-35-open:checked ~ .field .cell:nth-child(35), #input-35-open:checked ~ .field .cell:nth-child(43), #input-35-open:checked ~ .field .cell:nth-child(29), #input-35-open:checked ~ .field .cell:nth-child(37), #input-35-open:checked ~ .field .cell:nth-child(45), #input-35-open:checked ~ .field .cell:nth-child(53), #input-35-open:checked ~ .field .cell:nth-child(61), #input-35-open:checked ~ .field .cell:nth-child(52), #input-35-open:checked ~ .field .cell:nth-child(60), #input-35-open:checked ~ .field .cell:nth-child(54), #input-35-open:checked ~ .field .cell:nth-child(62), #input-35-open:checked ~ .field .cell:nth-child(55), #input-35-open:checked ~ .field .cell:nth-child(63), #input-35-open:checked ~ .field .cell:nth-child(56), #input-35-open:checked ~ .field .cell:nth-child(64), #input-35-open:checked ~ .field .cell:nth-child(46), #input-35-open:checked ~ .field .cell:nth-child(36), #input-35-open:checked ~ .field .cell:nth-child(38), #input-35-open:checked ~ .field .cell:nth-child(30) {
-  background-color: #EEE;
-}
-
-#input-35-open:checked ~ .field .cell:nth-child(28)::before, #input-35-open:checked ~ .field .cell:nth-child(44)::before, #input-35-open:checked ~ .field .cell:nth-child(27)::before, #input-35-open:checked ~ .field .cell:nth-child(35)::before, #input-35-open:checked ~ .field .cell:nth-child(43)::before, #input-35-open:checked ~ .field .cell:nth-child(29)::before, #input-35-open:checked ~ .field .cell:nth-child(37)::before, #input-35-open:checked ~ .field .cell:nth-child(45)::before, #input-35-open:checked ~ .field .cell:nth-child(53)::before, #input-35-open:checked ~ .field .cell:nth-child(61)::before, #input-35-open:checked ~ .field .cell:nth-child(52)::before, #input-35-open:checked ~ .field .cell:nth-child(60)::before, #input-35-open:checked ~ .field .cell:nth-child(54)::before, #input-35-open:checked ~ .field .cell:nth-child(62)::before, #input-35-open:checked ~ .field .cell:nth-child(55)::before, #input-35-open:checked ~ .field .cell:nth-child(63)::before, #input-35-open:checked ~ .field .cell:nth-child(56)::before, #input-35-open:checked ~ .field .cell:nth-child(64)::before, #input-35-open:checked ~ .field .cell:nth-child(46)::before, #input-35-open:checked ~ .field .cell:nth-child(36)::before, #input-35-open:checked ~ .field .cell:nth-child(38)::before, #input-35-open:checked ~ .field .cell:nth-child(30)::before {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-#input-35-open:checked ~ .field .cell:nth-child(28) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(44) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(27) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(35) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(43) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(29) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(37) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(45) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(53) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(61) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(52) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(60) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(54) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(62) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(55) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(63) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(56) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(64) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(46) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(36) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(38) .mark_as_opened, #input-35-open:checked ~ .field .cell:nth-child(30) .mark_as_opened {
+#input-35-open:checked ~ .field .cell:nth-child(36) .mark_as_opened,
+#input-35-open:checked ~ .field .cell:nth-child(36) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(37)::before {
-  content: "";
   display: none;
 }
 
@@ -1664,27 +1989,13 @@ input {
   align-items: center;
 }
 
-#input-36-open:checked ~ .field .cell:nth-child(37) .mark_as_opened {
-  display: none;
-}
-
-#input-36-open:checked ~ .field .cell:nth-child(29), #input-36-open:checked ~ .field .cell:nth-child(45), #input-36-open:checked ~ .field .cell:nth-child(37), #input-36-open:checked ~ .field .cell:nth-child(28), #input-36-open:checked ~ .field .cell:nth-child(36), #input-36-open:checked ~ .field .cell:nth-child(44), #input-36-open:checked ~ .field .cell:nth-child(27), #input-36-open:checked ~ .field .cell:nth-child(35), #input-36-open:checked ~ .field .cell:nth-child(43), #input-36-open:checked ~ .field .cell:nth-child(30), #input-36-open:checked ~ .field .cell:nth-child(38), #input-36-open:checked ~ .field .cell:nth-child(46), #input-36-open:checked ~ .field .cell:nth-child(53), #input-36-open:checked ~ .field .cell:nth-child(61), #input-36-open:checked ~ .field .cell:nth-child(52), #input-36-open:checked ~ .field .cell:nth-child(60), #input-36-open:checked ~ .field .cell:nth-child(54), #input-36-open:checked ~ .field .cell:nth-child(62), #input-36-open:checked ~ .field .cell:nth-child(55), #input-36-open:checked ~ .field .cell:nth-child(63), #input-36-open:checked ~ .field .cell:nth-child(56), #input-36-open:checked ~ .field .cell:nth-child(64) {
-  background-color: #EEE;
-}
-
-#input-36-open:checked ~ .field .cell:nth-child(29)::before, #input-36-open:checked ~ .field .cell:nth-child(45)::before, #input-36-open:checked ~ .field .cell:nth-child(37)::before, #input-36-open:checked ~ .field .cell:nth-child(28)::before, #input-36-open:checked ~ .field .cell:nth-child(36)::before, #input-36-open:checked ~ .field .cell:nth-child(44)::before, #input-36-open:checked ~ .field .cell:nth-child(27)::before, #input-36-open:checked ~ .field .cell:nth-child(35)::before, #input-36-open:checked ~ .field .cell:nth-child(43)::before, #input-36-open:checked ~ .field .cell:nth-child(30)::before, #input-36-open:checked ~ .field .cell:nth-child(38)::before, #input-36-open:checked ~ .field .cell:nth-child(46)::before, #input-36-open:checked ~ .field .cell:nth-child(53)::before, #input-36-open:checked ~ .field .cell:nth-child(61)::before, #input-36-open:checked ~ .field .cell:nth-child(52)::before, #input-36-open:checked ~ .field .cell:nth-child(60)::before, #input-36-open:checked ~ .field .cell:nth-child(54)::before, #input-36-open:checked ~ .field .cell:nth-child(62)::before, #input-36-open:checked ~ .field .cell:nth-child(55)::before, #input-36-open:checked ~ .field .cell:nth-child(63)::before, #input-36-open:checked ~ .field .cell:nth-child(56)::before, #input-36-open:checked ~ .field .cell:nth-child(64)::before {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-#input-36-open:checked ~ .field .cell:nth-child(29) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(45) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(37) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(28) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(36) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(44) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(27) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(35) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(43) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(30) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(38) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(46) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(53) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(61) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(52) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(60) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(54) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(62) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(55) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(63) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(56) .mark_as_opened, #input-36-open:checked ~ .field .cell:nth-child(64) .mark_as_opened {
+#input-36-open:checked ~ .field .cell:nth-child(37) .mark_as_opened,
+#input-36-open:checked ~ .field .cell:nth-child(37) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(38)::before {
-  content: "1";
+  content: "2";
   display: none;
 }
 
@@ -1717,12 +2028,13 @@ input {
   align-items: center;
 }
 
-#input-37-open:checked ~ .field .cell:nth-child(38) .mark_as_opened {
+#input-37-open:checked ~ .field .cell:nth-child(38) .mark_as_opened,
+#input-37-open:checked ~ .field .cell:nth-child(38) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(39)::before {
-  content: "2";
+  content: "";
   display: none;
 }
 
@@ -1755,12 +2067,47 @@ input {
   align-items: center;
 }
 
-#input-38-open:checked ~ .field .cell:nth-child(39) .mark_as_opened {
+#input-38-open:checked ~ .field .cell:nth-child(39) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(39) .mark_as_flag {
+  display: none;
+}
+
+#input-38-open:checked ~ .field .cell:nth-child(31), #input-38-open:checked ~ .field .cell:nth-child(47), #input-38-open:checked ~ .field .cell:nth-child(30), #input-38-open:checked ~ .field .cell:nth-child(38), #input-38-open:checked ~ .field .cell:nth-child(46), #input-38-open:checked ~ .field .cell:nth-child(32), #input-38-open:checked ~ .field .cell:nth-child(24), #input-38-open:checked ~ .field .cell:nth-child(16), #input-38-open:checked ~ .field .cell:nth-child(8), #input-38-open:checked ~ .field .cell:nth-child(7), #input-38-open:checked ~ .field .cell:nth-child(15), #input-38-open:checked ~ .field .cell:nth-child(6), #input-38-open:checked ~ .field .cell:nth-child(14), #input-38-open:checked ~ .field .cell:nth-child(5), #input-38-open:checked ~ .field .cell:nth-child(13), #input-38-open:checked ~ .field .cell:nth-child(23), #input-38-open:checked ~ .field .cell:nth-child(40), #input-38-open:checked ~ .field .cell:nth-child(48), #input-38-open:checked ~ .field .cell:nth-child(39) {
+  background-color: #EEE;
+}
+
+#input-38-open:checked ~ .field .cell:nth-child(31)::before, #input-38-open:checked ~ .field .cell:nth-child(47)::before, #input-38-open:checked ~ .field .cell:nth-child(30)::before, #input-38-open:checked ~ .field .cell:nth-child(38)::before, #input-38-open:checked ~ .field .cell:nth-child(46)::before, #input-38-open:checked ~ .field .cell:nth-child(32)::before, #input-38-open:checked ~ .field .cell:nth-child(24)::before, #input-38-open:checked ~ .field .cell:nth-child(16)::before, #input-38-open:checked ~ .field .cell:nth-child(8)::before, #input-38-open:checked ~ .field .cell:nth-child(7)::before, #input-38-open:checked ~ .field .cell:nth-child(15)::before, #input-38-open:checked ~ .field .cell:nth-child(6)::before, #input-38-open:checked ~ .field .cell:nth-child(14)::before, #input-38-open:checked ~ .field .cell:nth-child(5)::before, #input-38-open:checked ~ .field .cell:nth-child(13)::before, #input-38-open:checked ~ .field .cell:nth-child(23)::before, #input-38-open:checked ~ .field .cell:nth-child(40)::before, #input-38-open:checked ~ .field .cell:nth-child(48)::before, #input-38-open:checked ~ .field .cell:nth-child(39)::before {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-38-open:checked ~ .field .cell:nth-child(31) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(31) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(47) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(47) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(30) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(30) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(38) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(38) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(46) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(46) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(32) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(32) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(24) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(24) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(16) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(16) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(8) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(8) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(7) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(7) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(15) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(15) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(6) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(6) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(14) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(14) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(5) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(5) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(13) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(13) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(23) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(23) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(40) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(40) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(48) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(48) .mark_as_flag, #input-38-open:checked ~ .field .cell:nth-child(39) .mark_as_opened,
+#input-38-open:checked ~ .field .cell:nth-child(39) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(40)::before {
-  content: "2";
+  content: "";
   display: none;
 }
 
@@ -1793,12 +2140,47 @@ input {
   align-items: center;
 }
 
-#input-39-open:checked ~ .field .cell:nth-child(40) .mark_as_opened {
+#input-39-open:checked ~ .field .cell:nth-child(40) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(40) .mark_as_flag {
+  display: none;
+}
+
+#input-39-open:checked ~ .field .cell:nth-child(32), #input-39-open:checked ~ .field .cell:nth-child(24), #input-39-open:checked ~ .field .cell:nth-child(16), #input-39-open:checked ~ .field .cell:nth-child(8), #input-39-open:checked ~ .field .cell:nth-child(7), #input-39-open:checked ~ .field .cell:nth-child(15), #input-39-open:checked ~ .field .cell:nth-child(6), #input-39-open:checked ~ .field .cell:nth-child(14), #input-39-open:checked ~ .field .cell:nth-child(5), #input-39-open:checked ~ .field .cell:nth-child(13), #input-39-open:checked ~ .field .cell:nth-child(23), #input-39-open:checked ~ .field .cell:nth-child(31), #input-39-open:checked ~ .field .cell:nth-child(40), #input-39-open:checked ~ .field .cell:nth-child(48), #input-39-open:checked ~ .field .cell:nth-child(39), #input-39-open:checked ~ .field .cell:nth-child(47), #input-39-open:checked ~ .field .cell:nth-child(30), #input-39-open:checked ~ .field .cell:nth-child(38), #input-39-open:checked ~ .field .cell:nth-child(46) {
+  background-color: #EEE;
+}
+
+#input-39-open:checked ~ .field .cell:nth-child(32)::before, #input-39-open:checked ~ .field .cell:nth-child(24)::before, #input-39-open:checked ~ .field .cell:nth-child(16)::before, #input-39-open:checked ~ .field .cell:nth-child(8)::before, #input-39-open:checked ~ .field .cell:nth-child(7)::before, #input-39-open:checked ~ .field .cell:nth-child(15)::before, #input-39-open:checked ~ .field .cell:nth-child(6)::before, #input-39-open:checked ~ .field .cell:nth-child(14)::before, #input-39-open:checked ~ .field .cell:nth-child(5)::before, #input-39-open:checked ~ .field .cell:nth-child(13)::before, #input-39-open:checked ~ .field .cell:nth-child(23)::before, #input-39-open:checked ~ .field .cell:nth-child(31)::before, #input-39-open:checked ~ .field .cell:nth-child(40)::before, #input-39-open:checked ~ .field .cell:nth-child(48)::before, #input-39-open:checked ~ .field .cell:nth-child(39)::before, #input-39-open:checked ~ .field .cell:nth-child(47)::before, #input-39-open:checked ~ .field .cell:nth-child(30)::before, #input-39-open:checked ~ .field .cell:nth-child(38)::before, #input-39-open:checked ~ .field .cell:nth-child(46)::before {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-39-open:checked ~ .field .cell:nth-child(32) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(32) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(24) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(24) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(16) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(16) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(8) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(8) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(7) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(7) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(15) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(15) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(6) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(6) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(14) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(14) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(5) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(5) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(13) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(13) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(23) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(23) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(31) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(31) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(40) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(40) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(48) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(48) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(39) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(39) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(47) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(47) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(30) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(30) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(38) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(38) .mark_as_flag, #input-39-open:checked ~ .field .cell:nth-child(46) .mark_as_opened,
+#input-39-open:checked ~ .field .cell:nth-child(46) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(41)::before {
-  content: "2";
+  content: "";
   display: none;
 }
 
@@ -1831,12 +2213,46 @@ input {
   align-items: center;
 }
 
-#input-40-open:checked ~ .field .cell:nth-child(41) .mark_as_opened {
+#input-40-open:checked ~ .field .cell:nth-child(41) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(41) .mark_as_flag {
+  display: none;
+}
+
+#input-40-open:checked ~ .field .cell:nth-child(33), #input-40-open:checked ~ .field .cell:nth-child(25), #input-40-open:checked ~ .field .cell:nth-child(17), #input-40-open:checked ~ .field .cell:nth-child(9), #input-40-open:checked ~ .field .cell:nth-child(1), #input-40-open:checked ~ .field .cell:nth-child(2), #input-40-open:checked ~ .field .cell:nth-child(10), #input-40-open:checked ~ .field .cell:nth-child(18), #input-40-open:checked ~ .field .cell:nth-child(26), #input-40-open:checked ~ .field .cell:nth-child(11), #input-40-open:checked ~ .field .cell:nth-child(19), #input-40-open:checked ~ .field .cell:nth-child(27), #input-40-open:checked ~ .field .cell:nth-child(3), #input-40-open:checked ~ .field .cell:nth-child(34), #input-40-open:checked ~ .field .cell:nth-child(41), #input-40-open:checked ~ .field .cell:nth-child(49), #input-40-open:checked ~ .field .cell:nth-child(42), #input-40-open:checked ~ .field .cell:nth-child(50) {
+  background-color: #EEE;
+}
+
+#input-40-open:checked ~ .field .cell:nth-child(33)::before, #input-40-open:checked ~ .field .cell:nth-child(25)::before, #input-40-open:checked ~ .field .cell:nth-child(17)::before, #input-40-open:checked ~ .field .cell:nth-child(9)::before, #input-40-open:checked ~ .field .cell:nth-child(1)::before, #input-40-open:checked ~ .field .cell:nth-child(2)::before, #input-40-open:checked ~ .field .cell:nth-child(10)::before, #input-40-open:checked ~ .field .cell:nth-child(18)::before, #input-40-open:checked ~ .field .cell:nth-child(26)::before, #input-40-open:checked ~ .field .cell:nth-child(11)::before, #input-40-open:checked ~ .field .cell:nth-child(19)::before, #input-40-open:checked ~ .field .cell:nth-child(27)::before, #input-40-open:checked ~ .field .cell:nth-child(3)::before, #input-40-open:checked ~ .field .cell:nth-child(34)::before, #input-40-open:checked ~ .field .cell:nth-child(41)::before, #input-40-open:checked ~ .field .cell:nth-child(49)::before, #input-40-open:checked ~ .field .cell:nth-child(42)::before, #input-40-open:checked ~ .field .cell:nth-child(50)::before {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-40-open:checked ~ .field .cell:nth-child(33) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(33) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(25) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(25) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(17) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(17) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(9) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(9) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(1) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(1) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(2) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(2) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(10) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(10) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(18) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(18) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(26) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(26) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(11) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(11) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(19) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(19) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(27) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(27) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(3) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(3) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(34) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(34) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(41) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(41) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(49) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(49) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(42) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(42) .mark_as_flag, #input-40-open:checked ~ .field .cell:nth-child(50) .mark_as_opened,
+#input-40-open:checked ~ .field .cell:nth-child(50) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(42)::before {
-  content: "3";
+  content: "1";
   display: none;
 }
 
@@ -1869,7 +2285,8 @@ input {
   align-items: center;
 }
 
-#input-41-open:checked ~ .field .cell:nth-child(42) .mark_as_opened {
+#input-41-open:checked ~ .field .cell:nth-child(42) .mark_as_opened,
+#input-41-open:checked ~ .field .cell:nth-child(42) .mark_as_flag {
   display: none;
 }
 
@@ -1907,12 +2324,12 @@ input {
   align-items: center;
 }
 
-#input-42-open:checked ~ .field .cell:nth-child(43) .mark_as_opened {
+#input-42-open:checked ~ .field .cell:nth-child(43) .mark_as_opened,
+#input-42-open:checked ~ .field .cell:nth-child(43) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(44)::before {
-  content: "1";
   display: none;
 }
 
@@ -1945,12 +2362,12 @@ input {
   align-items: center;
 }
 
-#input-43-open:checked ~ .field .cell:nth-child(44) .mark_as_opened {
+#input-43-open:checked ~ .field .cell:nth-child(44) .mark_as_opened,
+#input-43-open:checked ~ .field .cell:nth-child(44) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(45)::before {
-  content: "";
   display: none;
 }
 
@@ -1983,27 +2400,13 @@ input {
   align-items: center;
 }
 
-#input-44-open:checked ~ .field .cell:nth-child(45) .mark_as_opened {
-  display: none;
-}
-
-#input-44-open:checked ~ .field .cell:nth-child(37), #input-44-open:checked ~ .field .cell:nth-child(29), #input-44-open:checked ~ .field .cell:nth-child(45), #input-44-open:checked ~ .field .cell:nth-child(53), #input-44-open:checked ~ .field .cell:nth-child(61), #input-44-open:checked ~ .field .cell:nth-child(52), #input-44-open:checked ~ .field .cell:nth-child(60), #input-44-open:checked ~ .field .cell:nth-child(54), #input-44-open:checked ~ .field .cell:nth-child(62), #input-44-open:checked ~ .field .cell:nth-child(55), #input-44-open:checked ~ .field .cell:nth-child(63), #input-44-open:checked ~ .field .cell:nth-child(56), #input-44-open:checked ~ .field .cell:nth-child(64), #input-44-open:checked ~ .field .cell:nth-child(44), #input-44-open:checked ~ .field .cell:nth-child(46), #input-44-open:checked ~ .field .cell:nth-child(36), #input-44-open:checked ~ .field .cell:nth-child(28), #input-44-open:checked ~ .field .cell:nth-child(27), #input-44-open:checked ~ .field .cell:nth-child(35), #input-44-open:checked ~ .field .cell:nth-child(43), #input-44-open:checked ~ .field .cell:nth-child(38), #input-44-open:checked ~ .field .cell:nth-child(30) {
-  background-color: #EEE;
-}
-
-#input-44-open:checked ~ .field .cell:nth-child(37)::before, #input-44-open:checked ~ .field .cell:nth-child(29)::before, #input-44-open:checked ~ .field .cell:nth-child(45)::before, #input-44-open:checked ~ .field .cell:nth-child(53)::before, #input-44-open:checked ~ .field .cell:nth-child(61)::before, #input-44-open:checked ~ .field .cell:nth-child(52)::before, #input-44-open:checked ~ .field .cell:nth-child(60)::before, #input-44-open:checked ~ .field .cell:nth-child(54)::before, #input-44-open:checked ~ .field .cell:nth-child(62)::before, #input-44-open:checked ~ .field .cell:nth-child(55)::before, #input-44-open:checked ~ .field .cell:nth-child(63)::before, #input-44-open:checked ~ .field .cell:nth-child(56)::before, #input-44-open:checked ~ .field .cell:nth-child(64)::before, #input-44-open:checked ~ .field .cell:nth-child(44)::before, #input-44-open:checked ~ .field .cell:nth-child(46)::before, #input-44-open:checked ~ .field .cell:nth-child(36)::before, #input-44-open:checked ~ .field .cell:nth-child(28)::before, #input-44-open:checked ~ .field .cell:nth-child(27)::before, #input-44-open:checked ~ .field .cell:nth-child(35)::before, #input-44-open:checked ~ .field .cell:nth-child(43)::before, #input-44-open:checked ~ .field .cell:nth-child(38)::before, #input-44-open:checked ~ .field .cell:nth-child(30)::before {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-#input-44-open:checked ~ .field .cell:nth-child(37) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(29) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(45) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(53) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(61) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(52) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(60) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(54) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(62) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(55) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(63) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(56) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(64) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(44) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(46) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(36) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(28) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(27) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(35) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(43) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(38) .mark_as_opened, #input-44-open:checked ~ .field .cell:nth-child(30) .mark_as_opened {
+#input-44-open:checked ~ .field .cell:nth-child(45) .mark_as_opened,
+#input-44-open:checked ~ .field .cell:nth-child(45) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(46)::before {
-  content: "1";
+  content: "2";
   display: none;
 }
 
@@ -2036,11 +2439,13 @@ input {
   align-items: center;
 }
 
-#input-45-open:checked ~ .field .cell:nth-child(46) .mark_as_opened {
+#input-45-open:checked ~ .field .cell:nth-child(46) .mark_as_opened,
+#input-45-open:checked ~ .field .cell:nth-child(46) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(47)::before {
+  content: "1";
   display: none;
 }
 
@@ -2073,11 +2478,13 @@ input {
   align-items: center;
 }
 
-#input-46-open:checked ~ .field .cell:nth-child(47) .mark_as_opened {
+#input-46-open:checked ~ .field .cell:nth-child(47) .mark_as_opened,
+#input-46-open:checked ~ .field .cell:nth-child(47) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(48)::before {
+  content: "1";
   display: none;
 }
 
@@ -2110,12 +2517,13 @@ input {
   align-items: center;
 }
 
-#input-47-open:checked ~ .field .cell:nth-child(48) .mark_as_opened {
+#input-47-open:checked ~ .field .cell:nth-child(48) .mark_as_opened,
+#input-47-open:checked ~ .field .cell:nth-child(48) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(49)::before {
-  content: "2";
+  content: "1";
   display: none;
 }
 
@@ -2148,12 +2556,13 @@ input {
   align-items: center;
 }
 
-#input-48-open:checked ~ .field .cell:nth-child(49) .mark_as_opened {
+#input-48-open:checked ~ .field .cell:nth-child(49) .mark_as_opened,
+#input-48-open:checked ~ .field .cell:nth-child(49) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(50)::before {
-  content: "3";
+  content: "1";
   display: none;
 }
 
@@ -2186,11 +2595,13 @@ input {
   align-items: center;
 }
 
-#input-49-open:checked ~ .field .cell:nth-child(50) .mark_as_opened {
+#input-49-open:checked ~ .field .cell:nth-child(50) .mark_as_opened,
+#input-49-open:checked ~ .field .cell:nth-child(50) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(51)::before {
+  content: "2";
   display: none;
 }
 
@@ -2223,12 +2634,13 @@ input {
   align-items: center;
 }
 
-#input-50-open:checked ~ .field .cell:nth-child(51) .mark_as_opened {
+#input-50-open:checked ~ .field .cell:nth-child(51) .mark_as_opened,
+#input-50-open:checked ~ .field .cell:nth-child(51) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(52)::before {
-  content: "1";
+  content: "3";
   display: none;
 }
 
@@ -2261,12 +2673,13 @@ input {
   align-items: center;
 }
 
-#input-51-open:checked ~ .field .cell:nth-child(52) .mark_as_opened {
+#input-51-open:checked ~ .field .cell:nth-child(52) .mark_as_opened,
+#input-51-open:checked ~ .field .cell:nth-child(52) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(53)::before {
-  content: "";
+  content: "4";
   display: none;
 }
 
@@ -2299,27 +2712,13 @@ input {
   align-items: center;
 }
 
-#input-52-open:checked ~ .field .cell:nth-child(53) .mark_as_opened {
-  display: none;
-}
-
-#input-52-open:checked ~ .field .cell:nth-child(45), #input-52-open:checked ~ .field .cell:nth-child(37), #input-52-open:checked ~ .field .cell:nth-child(29), #input-52-open:checked ~ .field .cell:nth-child(28), #input-52-open:checked ~ .field .cell:nth-child(36), #input-52-open:checked ~ .field .cell:nth-child(44), #input-52-open:checked ~ .field .cell:nth-child(27), #input-52-open:checked ~ .field .cell:nth-child(35), #input-52-open:checked ~ .field .cell:nth-child(43), #input-52-open:checked ~ .field .cell:nth-child(30), #input-52-open:checked ~ .field .cell:nth-child(38), #input-52-open:checked ~ .field .cell:nth-child(46), #input-52-open:checked ~ .field .cell:nth-child(53), #input-52-open:checked ~ .field .cell:nth-child(61), #input-52-open:checked ~ .field .cell:nth-child(52), #input-52-open:checked ~ .field .cell:nth-child(60), #input-52-open:checked ~ .field .cell:nth-child(54), #input-52-open:checked ~ .field .cell:nth-child(62), #input-52-open:checked ~ .field .cell:nth-child(55), #input-52-open:checked ~ .field .cell:nth-child(63), #input-52-open:checked ~ .field .cell:nth-child(56), #input-52-open:checked ~ .field .cell:nth-child(64) {
-  background-color: #EEE;
-}
-
-#input-52-open:checked ~ .field .cell:nth-child(45)::before, #input-52-open:checked ~ .field .cell:nth-child(37)::before, #input-52-open:checked ~ .field .cell:nth-child(29)::before, #input-52-open:checked ~ .field .cell:nth-child(28)::before, #input-52-open:checked ~ .field .cell:nth-child(36)::before, #input-52-open:checked ~ .field .cell:nth-child(44)::before, #input-52-open:checked ~ .field .cell:nth-child(27)::before, #input-52-open:checked ~ .field .cell:nth-child(35)::before, #input-52-open:checked ~ .field .cell:nth-child(43)::before, #input-52-open:checked ~ .field .cell:nth-child(30)::before, #input-52-open:checked ~ .field .cell:nth-child(38)::before, #input-52-open:checked ~ .field .cell:nth-child(46)::before, #input-52-open:checked ~ .field .cell:nth-child(53)::before, #input-52-open:checked ~ .field .cell:nth-child(61)::before, #input-52-open:checked ~ .field .cell:nth-child(52)::before, #input-52-open:checked ~ .field .cell:nth-child(60)::before, #input-52-open:checked ~ .field .cell:nth-child(54)::before, #input-52-open:checked ~ .field .cell:nth-child(62)::before, #input-52-open:checked ~ .field .cell:nth-child(55)::before, #input-52-open:checked ~ .field .cell:nth-child(63)::before, #input-52-open:checked ~ .field .cell:nth-child(56)::before, #input-52-open:checked ~ .field .cell:nth-child(64)::before {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-#input-52-open:checked ~ .field .cell:nth-child(45) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(37) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(29) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(28) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(36) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(44) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(27) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(35) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(43) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(30) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(38) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(46) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(53) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(61) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(52) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(60) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(54) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(62) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(55) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(63) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(56) .mark_as_opened, #input-52-open:checked ~ .field .cell:nth-child(64) .mark_as_opened {
+#input-52-open:checked ~ .field .cell:nth-child(53) .mark_as_opened,
+#input-52-open:checked ~ .field .cell:nth-child(53) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(54)::before {
-  content: "1";
+  content: "2";
   display: none;
 }
 
@@ -2352,7 +2751,8 @@ input {
   align-items: center;
 }
 
-#input-53-open:checked ~ .field .cell:nth-child(54) .mark_as_opened {
+#input-53-open:checked ~ .field .cell:nth-child(54) .mark_as_opened,
+#input-53-open:checked ~ .field .cell:nth-child(54) .mark_as_flag {
   display: none;
 }
 
@@ -2390,12 +2790,12 @@ input {
   align-items: center;
 }
 
-#input-54-open:checked ~ .field .cell:nth-child(55) .mark_as_opened {
+#input-54-open:checked ~ .field .cell:nth-child(55) .mark_as_opened,
+#input-54-open:checked ~ .field .cell:nth-child(55) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(56)::before {
-  content: "2";
   display: none;
 }
 
@@ -2428,7 +2828,8 @@ input {
   align-items: center;
 }
 
-#input-55-open:checked ~ .field .cell:nth-child(56) .mark_as_opened {
+#input-55-open:checked ~ .field .cell:nth-child(56) .mark_as_opened,
+#input-55-open:checked ~ .field .cell:nth-child(56) .mark_as_flag {
   display: none;
 }
 
@@ -2465,11 +2866,13 @@ input {
   align-items: center;
 }
 
-#input-56-open:checked ~ .field .cell:nth-child(57) .mark_as_opened {
+#input-56-open:checked ~ .field .cell:nth-child(57) .mark_as_opened,
+#input-56-open:checked ~ .field .cell:nth-child(57) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(58)::before {
+  content: "1";
   display: none;
 }
 
@@ -2502,12 +2905,13 @@ input {
   align-items: center;
 }
 
-#input-57-open:checked ~ .field .cell:nth-child(58) .mark_as_opened {
+#input-57-open:checked ~ .field .cell:nth-child(58) .mark_as_opened,
+#input-57-open:checked ~ .field .cell:nth-child(58) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(59)::before {
-  content: "2";
+  content: "1";
   display: none;
 }
 
@@ -2540,12 +2944,12 @@ input {
   align-items: center;
 }
 
-#input-58-open:checked ~ .field .cell:nth-child(59) .mark_as_opened {
+#input-58-open:checked ~ .field .cell:nth-child(59) .mark_as_opened,
+#input-58-open:checked ~ .field .cell:nth-child(59) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(60)::before {
-  content: "1";
   display: none;
 }
 
@@ -2578,12 +2982,13 @@ input {
   align-items: center;
 }
 
-#input-59-open:checked ~ .field .cell:nth-child(60) .mark_as_opened {
+#input-59-open:checked ~ .field .cell:nth-child(60) .mark_as_opened,
+#input-59-open:checked ~ .field .cell:nth-child(60) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(61)::before {
-  content: "";
+  content: "2";
   display: none;
 }
 
@@ -2616,27 +3021,12 @@ input {
   align-items: center;
 }
 
-#input-60-open:checked ~ .field .cell:nth-child(61) .mark_as_opened {
-  display: none;
-}
-
-#input-60-open:checked ~ .field .cell:nth-child(53), #input-60-open:checked ~ .field .cell:nth-child(45), #input-60-open:checked ~ .field .cell:nth-child(37), #input-60-open:checked ~ .field .cell:nth-child(29), #input-60-open:checked ~ .field .cell:nth-child(28), #input-60-open:checked ~ .field .cell:nth-child(36), #input-60-open:checked ~ .field .cell:nth-child(44), #input-60-open:checked ~ .field .cell:nth-child(27), #input-60-open:checked ~ .field .cell:nth-child(35), #input-60-open:checked ~ .field .cell:nth-child(43), #input-60-open:checked ~ .field .cell:nth-child(30), #input-60-open:checked ~ .field .cell:nth-child(38), #input-60-open:checked ~ .field .cell:nth-child(46), #input-60-open:checked ~ .field .cell:nth-child(52), #input-60-open:checked ~ .field .cell:nth-child(54), #input-60-open:checked ~ .field .cell:nth-child(61), #input-60-open:checked ~ .field .cell:nth-child(60), #input-60-open:checked ~ .field .cell:nth-child(62), #input-60-open:checked ~ .field .cell:nth-child(55), #input-60-open:checked ~ .field .cell:nth-child(63), #input-60-open:checked ~ .field .cell:nth-child(56), #input-60-open:checked ~ .field .cell:nth-child(64) {
-  background-color: #EEE;
-}
-
-#input-60-open:checked ~ .field .cell:nth-child(53)::before, #input-60-open:checked ~ .field .cell:nth-child(45)::before, #input-60-open:checked ~ .field .cell:nth-child(37)::before, #input-60-open:checked ~ .field .cell:nth-child(29)::before, #input-60-open:checked ~ .field .cell:nth-child(28)::before, #input-60-open:checked ~ .field .cell:nth-child(36)::before, #input-60-open:checked ~ .field .cell:nth-child(44)::before, #input-60-open:checked ~ .field .cell:nth-child(27)::before, #input-60-open:checked ~ .field .cell:nth-child(35)::before, #input-60-open:checked ~ .field .cell:nth-child(43)::before, #input-60-open:checked ~ .field .cell:nth-child(30)::before, #input-60-open:checked ~ .field .cell:nth-child(38)::before, #input-60-open:checked ~ .field .cell:nth-child(46)::before, #input-60-open:checked ~ .field .cell:nth-child(52)::before, #input-60-open:checked ~ .field .cell:nth-child(54)::before, #input-60-open:checked ~ .field .cell:nth-child(61)::before, #input-60-open:checked ~ .field .cell:nth-child(60)::before, #input-60-open:checked ~ .field .cell:nth-child(62)::before, #input-60-open:checked ~ .field .cell:nth-child(55)::before, #input-60-open:checked ~ .field .cell:nth-child(63)::before, #input-60-open:checked ~ .field .cell:nth-child(56)::before, #input-60-open:checked ~ .field .cell:nth-child(64)::before {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-#input-60-open:checked ~ .field .cell:nth-child(53) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(45) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(37) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(29) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(28) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(36) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(44) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(27) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(35) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(43) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(30) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(38) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(46) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(52) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(54) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(61) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(60) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(62) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(55) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(63) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(56) .mark_as_opened, #input-60-open:checked ~ .field .cell:nth-child(64) .mark_as_opened {
+#input-60-open:checked ~ .field .cell:nth-child(61) .mark_as_opened,
+#input-60-open:checked ~ .field .cell:nth-child(61) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(62)::before {
-  content: "";
   display: none;
 }
 
@@ -2669,27 +3059,13 @@ input {
   align-items: center;
 }
 
-#input-61-open:checked ~ .field .cell:nth-child(62) .mark_as_opened {
-  display: none;
-}
-
-#input-61-open:checked ~ .field .cell:nth-child(54), #input-61-open:checked ~ .field .cell:nth-child(53), #input-61-open:checked ~ .field .cell:nth-child(45), #input-61-open:checked ~ .field .cell:nth-child(37), #input-61-open:checked ~ .field .cell:nth-child(29), #input-61-open:checked ~ .field .cell:nth-child(28), #input-61-open:checked ~ .field .cell:nth-child(36), #input-61-open:checked ~ .field .cell:nth-child(44), #input-61-open:checked ~ .field .cell:nth-child(27), #input-61-open:checked ~ .field .cell:nth-child(35), #input-61-open:checked ~ .field .cell:nth-child(43), #input-61-open:checked ~ .field .cell:nth-child(30), #input-61-open:checked ~ .field .cell:nth-child(38), #input-61-open:checked ~ .field .cell:nth-child(46), #input-61-open:checked ~ .field .cell:nth-child(52), #input-61-open:checked ~ .field .cell:nth-child(61), #input-61-open:checked ~ .field .cell:nth-child(60), #input-61-open:checked ~ .field .cell:nth-child(62), #input-61-open:checked ~ .field .cell:nth-child(55), #input-61-open:checked ~ .field .cell:nth-child(63), #input-61-open:checked ~ .field .cell:nth-child(56), #input-61-open:checked ~ .field .cell:nth-child(64) {
-  background-color: #EEE;
-}
-
-#input-61-open:checked ~ .field .cell:nth-child(54)::before, #input-61-open:checked ~ .field .cell:nth-child(53)::before, #input-61-open:checked ~ .field .cell:nth-child(45)::before, #input-61-open:checked ~ .field .cell:nth-child(37)::before, #input-61-open:checked ~ .field .cell:nth-child(29)::before, #input-61-open:checked ~ .field .cell:nth-child(28)::before, #input-61-open:checked ~ .field .cell:nth-child(36)::before, #input-61-open:checked ~ .field .cell:nth-child(44)::before, #input-61-open:checked ~ .field .cell:nth-child(27)::before, #input-61-open:checked ~ .field .cell:nth-child(35)::before, #input-61-open:checked ~ .field .cell:nth-child(43)::before, #input-61-open:checked ~ .field .cell:nth-child(30)::before, #input-61-open:checked ~ .field .cell:nth-child(38)::before, #input-61-open:checked ~ .field .cell:nth-child(46)::before, #input-61-open:checked ~ .field .cell:nth-child(52)::before, #input-61-open:checked ~ .field .cell:nth-child(61)::before, #input-61-open:checked ~ .field .cell:nth-child(60)::before, #input-61-open:checked ~ .field .cell:nth-child(62)::before, #input-61-open:checked ~ .field .cell:nth-child(55)::before, #input-61-open:checked ~ .field .cell:nth-child(63)::before, #input-61-open:checked ~ .field .cell:nth-child(56)::before, #input-61-open:checked ~ .field .cell:nth-child(64)::before {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-#input-61-open:checked ~ .field .cell:nth-child(54) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(53) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(45) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(37) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(29) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(28) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(36) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(44) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(27) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(35) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(43) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(30) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(38) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(46) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(52) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(61) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(60) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(62) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(55) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(63) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(56) .mark_as_opened, #input-61-open:checked ~ .field .cell:nth-child(64) .mark_as_opened {
+#input-61-open:checked ~ .field .cell:nth-child(62) .mark_as_opened,
+#input-61-open:checked ~ .field .cell:nth-child(62) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(63)::before {
-  content: "";
+  content: "2";
   display: none;
 }
 
@@ -2722,27 +3098,13 @@ input {
   align-items: center;
 }
 
-#input-62-open:checked ~ .field .cell:nth-child(63) .mark_as_opened {
-  display: none;
-}
-
-#input-62-open:checked ~ .field .cell:nth-child(55), #input-62-open:checked ~ .field .cell:nth-child(54), #input-62-open:checked ~ .field .cell:nth-child(62), #input-62-open:checked ~ .field .cell:nth-child(53), #input-62-open:checked ~ .field .cell:nth-child(45), #input-62-open:checked ~ .field .cell:nth-child(37), #input-62-open:checked ~ .field .cell:nth-child(29), #input-62-open:checked ~ .field .cell:nth-child(28), #input-62-open:checked ~ .field .cell:nth-child(36), #input-62-open:checked ~ .field .cell:nth-child(44), #input-62-open:checked ~ .field .cell:nth-child(27), #input-62-open:checked ~ .field .cell:nth-child(35), #input-62-open:checked ~ .field .cell:nth-child(43), #input-62-open:checked ~ .field .cell:nth-child(30), #input-62-open:checked ~ .field .cell:nth-child(38), #input-62-open:checked ~ .field .cell:nth-child(46), #input-62-open:checked ~ .field .cell:nth-child(52), #input-62-open:checked ~ .field .cell:nth-child(61), #input-62-open:checked ~ .field .cell:nth-child(60), #input-62-open:checked ~ .field .cell:nth-child(63), #input-62-open:checked ~ .field .cell:nth-child(56), #input-62-open:checked ~ .field .cell:nth-child(64) {
-  background-color: #EEE;
-}
-
-#input-62-open:checked ~ .field .cell:nth-child(55)::before, #input-62-open:checked ~ .field .cell:nth-child(54)::before, #input-62-open:checked ~ .field .cell:nth-child(62)::before, #input-62-open:checked ~ .field .cell:nth-child(53)::before, #input-62-open:checked ~ .field .cell:nth-child(45)::before, #input-62-open:checked ~ .field .cell:nth-child(37)::before, #input-62-open:checked ~ .field .cell:nth-child(29)::before, #input-62-open:checked ~ .field .cell:nth-child(28)::before, #input-62-open:checked ~ .field .cell:nth-child(36)::before, #input-62-open:checked ~ .field .cell:nth-child(44)::before, #input-62-open:checked ~ .field .cell:nth-child(27)::before, #input-62-open:checked ~ .field .cell:nth-child(35)::before, #input-62-open:checked ~ .field .cell:nth-child(43)::before, #input-62-open:checked ~ .field .cell:nth-child(30)::before, #input-62-open:checked ~ .field .cell:nth-child(38)::before, #input-62-open:checked ~ .field .cell:nth-child(46)::before, #input-62-open:checked ~ .field .cell:nth-child(52)::before, #input-62-open:checked ~ .field .cell:nth-child(61)::before, #input-62-open:checked ~ .field .cell:nth-child(60)::before, #input-62-open:checked ~ .field .cell:nth-child(63)::before, #input-62-open:checked ~ .field .cell:nth-child(56)::before, #input-62-open:checked ~ .field .cell:nth-child(64)::before {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-#input-62-open:checked ~ .field .cell:nth-child(55) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(54) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(62) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(53) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(45) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(37) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(29) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(28) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(36) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(44) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(27) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(35) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(43) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(30) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(38) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(46) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(52) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(61) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(60) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(63) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(56) .mark_as_opened, #input-62-open:checked ~ .field .cell:nth-child(64) .mark_as_opened {
+#input-62-open:checked ~ .field .cell:nth-child(63) .mark_as_opened,
+#input-62-open:checked ~ .field .cell:nth-child(63) .mark_as_flag {
   display: none;
 }
 
 .cell:nth-child(64)::before {
-  content: "";
+  content: "1";
   display: none;
 }
 
@@ -2775,80 +3137,66 @@ input {
   align-items: center;
 }
 
-#input-63-open:checked ~ .field .cell:nth-child(64) .mark_as_opened {
+#input-63-open:checked ~ .field .cell:nth-child(64) .mark_as_opened,
+#input-63-open:checked ~ .field .cell:nth-child(64) .mark_as_flag {
   display: none;
 }
 
-#input-63-open:checked ~ .field .cell:nth-child(56), #input-63-open:checked ~ .field .cell:nth-child(55), #input-63-open:checked ~ .field .cell:nth-child(63), #input-63-open:checked ~ .field .cell:nth-child(54), #input-63-open:checked ~ .field .cell:nth-child(62), #input-63-open:checked ~ .field .cell:nth-child(53), #input-63-open:checked ~ .field .cell:nth-child(45), #input-63-open:checked ~ .field .cell:nth-child(37), #input-63-open:checked ~ .field .cell:nth-child(29), #input-63-open:checked ~ .field .cell:nth-child(28), #input-63-open:checked ~ .field .cell:nth-child(36), #input-63-open:checked ~ .field .cell:nth-child(44), #input-63-open:checked ~ .field .cell:nth-child(27), #input-63-open:checked ~ .field .cell:nth-child(35), #input-63-open:checked ~ .field .cell:nth-child(43), #input-63-open:checked ~ .field .cell:nth-child(30), #input-63-open:checked ~ .field .cell:nth-child(38), #input-63-open:checked ~ .field .cell:nth-child(46), #input-63-open:checked ~ .field .cell:nth-child(52), #input-63-open:checked ~ .field .cell:nth-child(61), #input-63-open:checked ~ .field .cell:nth-child(60), #input-63-open:checked ~ .field .cell:nth-child(64) {
-  background-color: #EEE;
-}
-
-#input-63-open:checked ~ .field .cell:nth-child(56)::before, #input-63-open:checked ~ .field .cell:nth-child(55)::before, #input-63-open:checked ~ .field .cell:nth-child(63)::before, #input-63-open:checked ~ .field .cell:nth-child(54)::before, #input-63-open:checked ~ .field .cell:nth-child(62)::before, #input-63-open:checked ~ .field .cell:nth-child(53)::before, #input-63-open:checked ~ .field .cell:nth-child(45)::before, #input-63-open:checked ~ .field .cell:nth-child(37)::before, #input-63-open:checked ~ .field .cell:nth-child(29)::before, #input-63-open:checked ~ .field .cell:nth-child(28)::before, #input-63-open:checked ~ .field .cell:nth-child(36)::before, #input-63-open:checked ~ .field .cell:nth-child(44)::before, #input-63-open:checked ~ .field .cell:nth-child(27)::before, #input-63-open:checked ~ .field .cell:nth-child(35)::before, #input-63-open:checked ~ .field .cell:nth-child(43)::before, #input-63-open:checked ~ .field .cell:nth-child(30)::before, #input-63-open:checked ~ .field .cell:nth-child(38)::before, #input-63-open:checked ~ .field .cell:nth-child(46)::before, #input-63-open:checked ~ .field .cell:nth-child(52)::before, #input-63-open:checked ~ .field .cell:nth-child(61)::before, #input-63-open:checked ~ .field .cell:nth-child(60)::before, #input-63-open:checked ~ .field .cell:nth-child(64)::before {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-#input-63-open:checked ~ .field .cell:nth-child(56) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(55) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(63) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(54) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(62) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(53) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(45) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(37) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(29) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(28) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(36) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(44) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(27) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(35) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(43) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(30) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(38) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(46) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(52) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(61) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(60) .mark_as_opened, #input-63-open:checked ~ .field .cell:nth-child(64) .mark_as_opened {
-  display: none;
-}
-
-.cell:nth-child(11)::before, .cell:nth-child(17)::before, .cell:nth-child(21)::before, .cell:nth-child(33)::before, .cell:nth-child(34)::before, .cell:nth-child(47)::before, .cell:nth-child(48)::before, .cell:nth-child(51)::before, .cell:nth-child(57)::before, .cell:nth-child(58)::before {
+.cell:nth-child(12)::before, .cell:nth-child(22)::before, .cell:nth-child(35)::before, .cell:nth-child(37)::before, .cell:nth-child(44)::before, .cell:nth-child(45)::before, .cell:nth-child(56)::before, .cell:nth-child(57)::before, .cell:nth-child(60)::before, .cell:nth-child(62)::before {
   content: '■';
 }
 
-#input-33-open:checked ~ .game_over, #input-20-open:checked ~ .game_over, #input-46-open:checked ~ .game_over, #input-50-open:checked ~ .game_over, #input-56-open:checked ~ .game_over, #input-16-open:checked ~ .game_over, #input-47-open:checked ~ .game_over, #input-57-open:checked ~ .game_over, #input-32-open:checked ~ .game_over, #input-10-open:checked ~ .game_over,
-input ~ #input-0-flag:not(:checked) ~ #input-1-flag:not(:checked) ~ #input-2-flag:not(:checked) ~ #input-3-flag:not(:checked) ~ #input-4-flag:not(:checked) ~ #input-5-flag:not(:checked) ~ #input-6-flag:not(:checked) ~ #input-7-flag:not(:checked) ~ #input-8-flag:not(:checked) ~ #input-9-flag:not(:checked) ~ #input-10-flag:checked ~ #input-11-flag:not(:checked) ~ #input-12-flag:not(:checked) ~ #input-13-flag:not(:checked) ~ #input-14-flag:not(:checked) ~ #input-15-flag:not(:checked) ~ #input-16-flag:checked ~ #input-17-flag:not(:checked) ~ #input-18-flag:not(:checked) ~ #input-19-flag:not(:checked) ~ #input-20-flag:checked ~ #input-21-flag:not(:checked) ~ #input-22-flag:not(:checked) ~ #input-23-flag:not(:checked) ~ #input-24-flag:not(:checked) ~ #input-25-flag:not(:checked) ~ #input-26-flag:not(:checked) ~ #input-27-flag:not(:checked) ~ #input-28-flag:not(:checked) ~ #input-29-flag:not(:checked) ~ #input-30-flag:not(:checked) ~ #input-31-flag:not(:checked) ~ #input-32-flag:checked ~ #input-33-flag:checked ~ #input-34-flag:not(:checked) ~ #input-35-flag:not(:checked) ~ #input-36-flag:not(:checked) ~ #input-37-flag:not(:checked) ~ #input-38-flag:not(:checked) ~ #input-39-flag:not(:checked) ~ #input-40-flag:not(:checked) ~ #input-41-flag:not(:checked) ~ #input-42-flag:not(:checked) ~ #input-43-flag:not(:checked) ~ #input-44-flag:not(:checked) ~ #input-45-flag:not(:checked) ~ #input-46-flag:checked ~ #input-47-flag:checked ~ #input-48-flag:not(:checked) ~ #input-49-flag:not(:checked) ~ #input-50-flag:checked ~ #input-51-flag:not(:checked) ~ #input-52-flag:not(:checked) ~ #input-53-flag:not(:checked) ~ #input-54-flag:not(:checked) ~ #input-55-flag:not(:checked) ~ #input-56-flag:checked ~ #input-57-flag:checked ~ #input-58-flag:not(:checked) ~ #input-59-flag:not(:checked) ~ #input-60-flag:not(:checked) ~ #input-61-flag:not(:checked) ~ #input-62-flag:not(:checked) ~ #input-63-flag:not(:checked) ~ .game_clear {
+#input-61-open:checked ~ .game_over, #input-43-open:checked ~ .game_over, #input-34-open:checked ~ .game_over, #input-59-open:checked ~ .game_over, #input-36-open:checked ~ .game_over, #input-11-open:checked ~ .game_over, #input-55-open:checked ~ .game_over, #input-21-open:checked ~ .game_over, #input-56-open:checked ~ .game_over, #input-44-open:checked ~ .game_over,
+input ~ #input-0-flag:not(:checked) ~ #input-1-flag:not(:checked) ~ #input-2-flag:not(:checked) ~ #input-3-flag:not(:checked) ~ #input-4-flag:not(:checked) ~ #input-5-flag:not(:checked) ~ #input-6-flag:not(:checked) ~ #input-7-flag:not(:checked) ~ #input-8-flag:not(:checked) ~ #input-9-flag:not(:checked) ~ #input-10-flag:not(:checked) ~ #input-11-flag:checked ~ #input-12-flag:not(:checked) ~ #input-13-flag:not(:checked) ~ #input-14-flag:not(:checked) ~ #input-15-flag:not(:checked) ~ #input-16-flag:not(:checked) ~ #input-17-flag:not(:checked) ~ #input-18-flag:not(:checked) ~ #input-19-flag:not(:checked) ~ #input-20-flag:not(:checked) ~ #input-21-flag:checked ~ #input-22-flag:not(:checked) ~ #input-23-flag:not(:checked) ~ #input-24-flag:not(:checked) ~ #input-25-flag:not(:checked) ~ #input-26-flag:not(:checked) ~ #input-27-flag:not(:checked) ~ #input-28-flag:not(:checked) ~ #input-29-flag:not(:checked) ~ #input-30-flag:not(:checked) ~ #input-31-flag:not(:checked) ~ #input-32-flag:not(:checked) ~ #input-33-flag:not(:checked) ~ #input-34-flag:checked ~ #input-35-flag:not(:checked) ~ #input-36-flag:checked ~ #input-37-flag:not(:checked) ~ #input-38-flag:not(:checked) ~ #input-39-flag:not(:checked) ~ #input-40-flag:not(:checked) ~ #input-41-flag:not(:checked) ~ #input-42-flag:not(:checked) ~ #input-43-flag:checked ~ #input-44-flag:checked ~ #input-45-flag:not(:checked) ~ #input-46-flag:not(:checked) ~ #input-47-flag:not(:checked) ~ #input-48-flag:not(:checked) ~ #input-49-flag:not(:checked) ~ #input-50-flag:not(:checked) ~ #input-51-flag:not(:checked) ~ #input-52-flag:not(:checked) ~ #input-53-flag:not(:checked) ~ #input-54-flag:not(:checked) ~ #input-55-flag:checked ~ #input-56-flag:checked ~ #input-57-flag:not(:checked) ~ #input-58-flag:not(:checked) ~ #input-59-flag:checked ~ #input-60-flag:not(:checked) ~ #input-61-flag:checked ~ #input-62-flag:not(:checked) ~ #input-63-flag:not(:checked) ~ .game_clear {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.flag-check:checked ~ .notice-area .last::before {
+.flag_check:checked ~ .notice_area .last::before {
   content: "9";
 }
 
-.flag-check:checked ~ .flag-check:checked ~ .notice-area .last::before {
+.flag_check:checked ~ .flag_check:checked ~ .notice_area .last::before {
   content: "8";
 }
 
-.flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .notice-area .last::before {
+.flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .notice_area .last::before {
   content: "7";
 }
 
-.flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .notice-area .last::before {
+.flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .notice_area .last::before {
   content: "6";
 }
 
-.flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .notice-area .last::before {
+.flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .notice_area .last::before {
   content: "5";
 }
 
-.flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .notice-area .last::before {
+.flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .notice_area .last::before {
   content: "4";
 }
 
-.flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .notice-area .last::before {
+.flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .notice_area .last::before {
   content: "3";
 }
 
-.flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .notice-area .last::before {
+.flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .notice_area .last::before {
   content: "2";
 }
 
-.flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .notice-area .last::before {
+.flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .notice_area .last::before {
   content: "1";
 }
 
-.flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .flag-check:checked ~ .notice-area .last::before {
+.flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .flag_check:checked ~ .notice_area .last::before {
   content: "0";
 }
 
-.notice-area .last::before {
+.notice_area .last::before {
   content: "10";
 }
 
-.notice-area .last::after {
+.notice_area .last::after {
   content: '個';
 }

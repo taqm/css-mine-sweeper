@@ -19,7 +19,7 @@ input {
     text-align: center;
   }
 }
-.notice-area {
+.notice_area {
   text-align: center;
 }
 
@@ -107,7 +107,8 @@ input {
     justify-content: center;
     align-items: center;
   }
-  .mark_as_opened {
+  .mark_as_opened,
+  .mark_as_flag {
     display: none;
   }
 }
@@ -161,9 +162,9 @@ $areaOffsets: (
 }
 
 // 周囲８マスの地雷の数を返却
-@function countMine($n) {
+@function countMine($pos) {
   $count: 0;
-  @each $n in getNeighborIndex($n) {
+  @each $n in getNeighborIndex($pos) {
     @if isMine($n) {
       $count: $count + 1;
     }
@@ -268,15 +269,15 @@ $clearSelector: "input";
 
 $lastSelector: "";
 @for $n from 1 through $mineCount {
-  $lastSelector: $lastSelector + ".flag-check:checked ~";
+  $lastSelector: $lastSelector + ".flag_check:checked ~";
 
-  #{$lastSelector} .notice-area .last {
+  #{$lastSelector} .notice_area .last {
     &::before {
       content: "#{$mineCount - $n}";
     }
   }
 }
-.notice-area .last {
+.notice_area .last {
   &::before {
     content: "#{$mineCount}";
   }
