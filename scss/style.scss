@@ -268,7 +268,7 @@ $clearSelector: "input";
 }
 
 $lastSelector: "";
-@for $n from 1 through $mineCount {
+@for $n from 1 through $row * $col {
   $lastSelector: $lastSelector + ".flag_check:checked ~";
 
   #{$lastSelector} .notice_area .last {
